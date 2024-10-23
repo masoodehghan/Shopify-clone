@@ -1,26 +1,46 @@
 @font-face {
     font-family: Poppins;
     src: url("../fonts/Poppins-Regular.ttf") format('truetype') ;
+    
 }
 
 @font-face {
-    font-family: Poppins-Medium;
-    src: url("../fonts/Poppins-Medium.ttf") format('truetype')  ;
+    font-family: Poppins;
+    font-weight: bold;
+    src: url("../fonts/Poppins-Bold.ttf") format('truetype') ;
+    
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 300;
+    src: url("../fonts/Poppins-Light.ttf") format('truetype') ;
+    
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: lighter;
+    src: url("../fonts/Poppins-ExtraLight.ttf") format('truetype') ;
+    
 }
 
 :root {
     --header-bg-color: #F44336;
+    --border-color:  rgba(255, 255, 255, 0.18);
+    --main-bg-color: #f5f5f5;
 }
 
 *, ::after, ::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+
     font-family: Poppins, sans-serif, serif;
-    background-color: #f5f5f5;
+    background-color: var(--main-bg-color);
 
 }
 
@@ -39,9 +59,10 @@ body {
 .header-container {
     background-color: var(--header-bg-color);
     color: #fff;
+    font-size: 12px;
 }
 #topbar { 
-
+    border-bottom: 1px solid var(--border-color);
 }
 .banner { 
 
@@ -51,6 +72,10 @@ body {
 
 
 /* top bar  */
+
+.nav {
+    line-height: 0.95rem;
+}
 
 nav{
     display: flex;
@@ -71,7 +96,7 @@ nav{
 .user-info-block ul{
     line-height: 45px;
     display: flex;
-    font-weight: 300;
+    font-weight: lighter;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
@@ -85,8 +110,9 @@ nav{
     display: flex;
     align-items: center;
     padding: 0 18px 0 8px;
-    line-height: 28px;
+    line-height: 24px;
     position: relative;
+
 }
 .dropdown-menu {
     background-color: #fff;
@@ -98,6 +124,7 @@ nav{
     transform: scale(0, 0);
     z-index: 1000;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 6px 12px 0;
 
 }
 
@@ -134,3 +161,82 @@ nav{
 
 }
 /* end top bar */
+
+/* main header */
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+#header-main {
+    line-height: 17.15px;
+}
+
+#header-logo {
+    padding: 28px 0 ;
+}
+
+#search-submit-btn {
+    background-color: black;
+    width: 3rem;
+    height: 2.8rem;
+    position: absolute;
+
+}
+
+#search-box {
+    position: relative;
+
+}
+
+#search-box input[type=text]{
+    width: 34rem;
+    font-size: 12px;
+    height: 2.8rem;
+    padding: 2px 0 0 15px;
+    outline: 0;
+}
+
+.cart-block {
+    margin: 20px 0;
+    padding: 12px 0 12px 30px;
+
+    border-left: 1px solid var(--border-color);
+    
+}
+
+.title-cart {
+    background: url('../images/icon_minicart2.webp') no-repeat center center;
+    width: 30px;
+    height: 33px;
+    float: left;
+    margin-right: 13px;
+}
+
+.cart-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.media-heading a {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-left, .header-center, .header-right {
+    padding: 0 15px;
+}
+
+.inner-car {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+

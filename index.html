@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    
     <title>Shopify Responsive Theme</title>
   </head>
   <body>
@@ -19,24 +23,35 @@
                 <div class="container">
                   <nav>
                     <div class="currency-block">
-                      <span>CURRENCY</span> 
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="currency-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      <span>CURRENCY</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="currency-icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
                       </svg>
                       <div class="dropdown-menu">
                         <ul id="currencies">
-                            <li><a href="#">usd</a></li>
-                            <li><a href="#"></a>eur</a></li>
-                            <li><a href="#"></a>aud</a></li>
-                            <li><a href="#"></a>gbp</a></li>
-                            <li><a href="#"></a>jpy</a></li>
+                          <li><a href="#">usd</a></li>
+                          <li><a href="#">eur</a></li>
+                          <li><a href="#">aud</a></li>
+                          <li><a href="#">gbp</a></li>
+                          <li><a href="#">jpy</a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="user-info-block">
                       <ul>
-                          <li><a href="#">MY ACCOUNT</a></li>
-                          <li><a href="#">WHISHLIST</a></li>
+                        <li><a href="#">MY ACCOUNT</a></li>
+                        <li><a href="#">WHISHLIST</a></li>
                         <li><a href="#">CHECK OUT</a></li>
                         <li><a href="#">LOGIN</a></li>
                         <li><a href="#">REGISTER</a></li>
@@ -46,14 +61,66 @@
                 </div>
               </div>
             </div>
-            <div id="header-main"></div>
+            <div id="header-main">
+              <div class="container">
+                <div class="header-wrap">
+                  <div id="header-left col-md-3 col-sm-6 col-xs-12">
+                    <a href="/">
+                      <img src="images/logo.webp" alt="site logo" />
+                    </a>
+                  </div>
+                  <div class="header-center col-md-6 col-sm-6 col-xs-12">
+                    <div id="search_block_top">
+                      <!-- <span class="fa fa-search"></span> -->
+                      <form id="search-box" class="popup-content" action="" method="post">
+                        <input type="hidden" />
+                        <input placeholder="Search..." class="search_query form-controll" type="text" />
+                        <button id="search-submit-btn" type="submit" class="btn btn-sm">
+                          <span><i class="fa fa-search"></i></span>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="header-right col-md-3 col-sm-6 col-xs-12">
+                    <div class="cart-block">
+                      <div class="media-heading">
+                        <a href="#" class="cart-toggle">
+                          <div class="title-cart"></div>
+                          <div class="inner-cart">
+                            <span class="cart-title">Shopping Cart</span>
+                            <span class="cart-count">1</span>
+                            <span>item-</span>
+                            <span class="cart-cost">$100.00</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="alpha-nav">
+              <div class="container">
+                <div class="row no-gutter">
+                  <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div id="alpha-vertical-menu" class="block alpha-vertical-menu">
+                      <div class="title-block">
+                        <span>Categories</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-9">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </header>
       </section>
     </div>
 
-
-
     <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
