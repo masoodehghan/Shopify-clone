@@ -47,37 +47,10 @@ body {
 
 }
 
-.currency-block {
-    background-color: rgba(0, 0, 0, 0.25);
-    font-size: 0.7rem;
-    display: flex;
-    align-items: center;
-    padding: 0 18px 0 8px;
-    line-height: 28px;
-    position: relative;
-}
-.dropdown-menu {
-    display: none;
-    background-color: #fff;
-    color: #000;
-    position: absolute;
-}
 
-.currency-block .dropdown-menu {
-    top: 29px;
-    left: 0;
-    width: 8rem;
-}
 
-#currencies {
-    list-style: none;
-    
-}
 
-.currency-icon {
-    width: 17px;
-    height: 17px;
-}
+/* top bar  */
 
 nav{
     display: flex;
@@ -85,6 +58,11 @@ nav{
     align-items: center;
     font-size: 0.62rem;
 
+}
+
+.currency-icon {
+    width: 17px;
+    height: 17px;
 }
 
 .user-info-block ul li a{
@@ -100,6 +78,59 @@ nav{
     /* margin-right: 80px; */
 }
 
+
+.currency-block {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    padding: 0 18px 0 8px;
+    line-height: 28px;
+    position: relative;
+}
+.dropdown-menu {
+    background-color: #fff;
+    color: #000;
+    visibility: hidden;
+    position: absolute;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    transform: scale(0, 0);
+    z-index: 1000;
+    padding: 10px;
+
+}
+
+.currency-block:hover {
+    cursor: pointer;
+}
+
+.currency-block:hover .dropdown-menu {
+    visibility: visible;
+    transform: scale(1, 1);
+}
+
+.currency-block .dropdown-menu {
+    top: 29px;
+    left: 0;
+    min-width: 8rem;
+
+}
+
+#currencies {
+    list-style: outside none none;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#currencies li:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    
+}
+
+
 #topbar-content { 
 
 }
+/* end top bar */

@@ -1,15 +1,19 @@
 const $ = document;
 
-const currencyBlock = $.querySelector('.currency-block');
-const dropDownMenu = $.querySelector('.dropdown-menu');
+const currencyBlock = $.querySelector(".currency-block");
+// let dropDownMenu;
 
-currencyBlock.addEventListener('mouseover', (e) => {
-    e.target.style.cursor = 'pointer' 
-    dropDownMenu.style.display = 'block'
-})
+// currencyBlock.addEventListener("mouseover", (e) => {
+//   dropDownMenu = $.querySelector(".currency-block .dropdown-menu");
 
-currencyBlock.addEventListener('mouseleave', () => {
-    dropDownMenu.style.display = 'none'
-})
+//   e.target.style.cursor = "pointer";
+//   dropDownMenu.style.transform = "scale(1, 1)"
+//   dropDownMenu.style.visibility = "visible";
+// });
 
+// currencyBlock.addEventListener("mouseleave", () => {
+//   dropDownMenu = $.querySelector(".currency-block .dropdown-menu");
+//   dropDownMenu.style.transform = "scale(0, 0)"
+//   dropDownMenu.style.visibility = "hidden";
 
+// });
