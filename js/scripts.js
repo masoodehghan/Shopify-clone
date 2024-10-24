@@ -1,19 +1,17 @@
 const $ = document;
 
-const currencyBlock = $.querySelector(".currency-block");
-// let dropDownMenu;
+const alphaVerticalMenu = $.querySelector('#alpha-vertical-menu');
+const verticalMenuDropDownBlcok = $.querySelector('.block_content')
 
-// currencyBlock.addEventListener("mouseover", (e) => {
-//   dropDownMenu = $.querySelector(".currency-block .dropdown-menu");
+alphaVerticalMenu.addEventListener('mouseover', (e) => {
+    e.preventDefault()
+    verticalMenuDropDownBlcok.style.display = 'block';
+    console.log(verticalMenuDropDownBlcok);
+})
 
-//   e.target.style.cursor = "pointer";
-//   dropDownMenu.style.transform = "scale(1, 1)"
-//   dropDownMenu.style.visibility = "visible";
-// });
+alphaVerticalMenu.addEventListener('mouseout', (e) => {
+    e.preventDefault()
 
-// currencyBlock.addEventListener("mouseleave", () => {
-//   dropDownMenu = $.querySelector(".currency-block .dropdown-menu");
-//   dropDownMenu.style.transform = "scale(0, 0)"
-//   dropDownMenu.style.visibility = "hidden";
-
-// });
+    verticalMenuDropDownBlcok.style.display = 'none';
+    console.log(verticalMenuDropDownBlcok);
+})
