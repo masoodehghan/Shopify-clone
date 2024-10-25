@@ -11,7 +11,7 @@ alphaVerticalMenu.addEventListener('mouseover', (e) => {
 
 alphaVerticalMenu.addEventListener('mouseout', (e) => {
     e.preventDefault()
-
+    
     verticalMenuDropDownBlcok.style.display = 'none';
     console.log(verticalMenuDropDownBlcok);
 })
