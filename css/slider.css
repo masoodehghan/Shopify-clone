@@ -1,0 +1,15 @@
+#slideshow .slider-container {
+    overflow: hidden;
+    background-color: #fff;
+    max-height: 575px;   
+}
+
+.apollo-slides {
+    position: relative;
+    width: 100%;
+    background: url('../images/loading.webp') no-repeat center center;
+    height: auto;
+    overflow: hidden;
+
+}
+
