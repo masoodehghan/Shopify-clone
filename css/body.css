@@ -62,4 +62,11 @@ body {
     padding: 0 15px;
 }
 
+.container::before, .container::after {
+    content: " ";
+    display: table;
+  }
 
+.container::after {
+    clear: both;
+}

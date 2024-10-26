@@ -1,15 +1,308 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceInRight {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+    -webkit-transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+    -webkit-transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+    -webkit-transform: translate3d(-25px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+    -webkit-transform: translate3d(-25px, 0, 0);
+  }
+
+  100% {
+    transform: none;
+    -webkit-transform: none;
+  }
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.nivo-caption .caption_1 .text_first, 
+.nivo-caption .caption_2 .text_first,
+.nivo-caption .caption_3 .text_first
+{
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.nivo-caption .caption_1 h3, .nivo-caption .caption_2 h3,
+.nivo-caption .caption_3 h3 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.nivo-caption .caption_1  p,
+.nivo-caption .caption_2  p,
+.nivo-caption .caption_3  p 
+{
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.nivo-caption  .caption_1 a,
+.nivo-caption .caption_2 a,
+.nivo-caption .caption_3 a
+{
+  -webkit-animation-delay: 2s;
+  animation-delay: 2.5s;
+}
+
+.fade, .nivo-caption .caption_1 .text_first,
+.nivo-caption .caption_2 .text_first,
+.nivo-caption .caption_3 .text_first {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  -ms-animation-fill-mode: backwards;
+  -o-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-iteration-count: none;
+  animation-iteration-count: none;
+}
+
+.bounceInRight,
+.nivo-caption h3,
+.nivo-caption  p 
+
+{
+
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  -ms-animation-fill-mode: backwards;
+  -o-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-iteration-count: none;
+  animation-iteration-count: none;
+}
+
+
+.bounceIn, .nivo-caption .caption_1 a, .nivo-caption .caption_2 a,
+.nivo-caption .caption_3 a
+{
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  -ms-animation-fill-mode: backwards;
+  -o-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-iteration-count: none;
+  animation-iteration-count: none;
+}
+
+
 #slideshow .slider-container {
-    overflow: hidden;
-    background-color: #fff;
-    max-height: 575px;   
+  overflow: hidden;
+  background-color: #fff;
+  max-height: 575px;
 }
 
 .apollo-slides {
-    position: relative;
-    width: 100%;
-    background: url('../images/loading.webp') no-repeat center center;
-    height: auto;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: url("../images/loading.webp") no-repeat center center;
+  height: auto;
+  overflow: hidden;
+}
 
+.caption-fullwidth.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+.slide-caption {
+  position: absolute;
+  margin: 0 auto;
+  width: 480px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.nivo-caption {
+  top: 20%;
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+
+.apollo-html-caption {
+  display: none;
+}
+
+.caption_2,
+.caption_3 {
+  left: 0;
+  top: 0;
+  right: auto;
+}
+.caption_1 {
+  top: 0;
+  left: auto;
+  right: 0;
+}
+.slide-caption .text_first {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: none;
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0 40px 20px;
+}
+
+.slide-caption h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: none;
+  color: #fff;
+  letter-spacing: 0px;
+  margin: 0 40px;
+  padding: 0;
+  line-height: 35px;
+}
+
+.slide-caption p {
+  color: #fff;
+  font-size: 13px;
+  font-family: Poppins;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 10px 40px !important;
+  letter-spacing: 0;
+}
+
+
+
+.slide-caption .btn-slide {
+  border: 1px solid #f44336;
+  background: #f44336;
+  color: #fff;
+  margin: 5px 40px 0;
+  padding: 0 15px;
+  line-height: 42px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  height: 42px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-slide {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn {
+  display: inline-block !important;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.42857;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.deactive {
+  display: none;
 }
 
