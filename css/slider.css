@@ -117,7 +117,7 @@
   animation-delay: 2.5s;
 }
 
-.fade, .nivo-caption .caption_1 .text_first,
+.fadeIn, .nivo-caption .caption_1 .text_first,
 .nivo-caption .caption_2 .text_first,
 .nivo-caption .caption_3 .text_first {
   -webkit-animation-name: fade;
