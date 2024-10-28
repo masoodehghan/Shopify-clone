@@ -1,0 +1,148 @@
+.pgmLeft::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+}
+
+.pgmLeft {
+  position: relative;
+  padding: 0 30px;
+}
+.blockGolMart .nav-tabs {
+  margin: 0;
+  padding: 10px 0;
+  border: 0px;
+}
+
+.blockGolMart .nav-tabs > li {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  width: 100%;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.blockGolMart .nav-tabs > li > a {
+  padding: 10px 0;
+  display: block;
+  font-size: 13px;
+  background: transparent;
+  border: 0px;
+  color: #999;
+  line-height: 20px;
+}
+
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+}
+
+.center_column .products_block,
+.center_column .categoryTabs {
+  position: relative;
+
+  z-index: 1;
+
+  margin-top: 30px;
+}
+
+.categoryTabs {
+  background-color: #fff;
+}
+
+.categoryTabs .tab-content {
+  z-index: 2;
+  position: relative;
+}
+
+.blockGolMart .block-title h3 {
+  margin: 0;
+  padding: 24px 0 20px;
+  font-family: Rhodium Libre;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f54337;
+  line-height: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  text-transform: uppercase;
+}
+
+.blockGolMart .nav-tabs > li.active > a {
+  color: #000;
+  background: transparent;
+  border: 0px;
+}
+
+.blockGolMart.One .pgmLeft::before {
+  background-color: #f54337;
+}
+
+.blockGolMart .owl-prev::before, .blockGolMart .owl-next::before {
+  padding: 3px 14px;
+}
+
+
+
+.blockGolMart .owl-prev::before,
+.blockGolMart .owl-next::before  {
+  text-shadow: none;
+  content: "\f104";
+  font-family: FontAwesome;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.blockGolMart .owl-next::before {
+    content: "\f105";
+}
+
+.blockGolMart .owl-next, .blockGolMart .owl-prev {
+  font-size: 0;
+  position: absolute;
+}
+
+.blockGolMart .owl-prev,
+.blockGolMart .owl-next {
+  background-color: transparent;
+  color: #b8b8b8;
+  border: 1px solid #b8b8b8;
+  border-radius: 100%;
+  transform: scale(0);
+
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.blockGolMart .owl-prev:hover,
+.blockGolMart .owl-next:hover {
+  background-color: #e6e6e6;
+ 
+}
+#categoryTabOne1:hover .owl-prev, #categoryTabOne1:hover .owl-next {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}

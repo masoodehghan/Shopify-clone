@@ -90,4 +90,12 @@ body {
   line-height: normal;
 }
 
+.nav::after {
+  clear: both;
+}
+
+.nav::after, .nav::before {
+  content: " ";
+  display: table;
+}
 
