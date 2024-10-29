@@ -51,6 +51,12 @@ body {
   background-color: var(--main-bg-color);
 }
 
+ul, ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 360px;
