@@ -1,0 +1,194 @@
+.breadcrumb {
+  padding: 20px 0;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li:first-child a::before {
+  content: "\f015";
+  font-family: FontAwesome;
+  font-size: 12px;
+  line-height: 14px;
+  color: #929292;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.breadcrumb > li:first-child a {
+  position: relative;
+  padding-left: 15px;
+}
+
+.breadcrumb > li a,
+.breadcrumb > li span {
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
+}
+
+.breadcrumb > li + li::before {
+  content: "\f105";
+  font-family: FontAwesome;
+  font-size: 12px;
+  padding: 0 5px;
+  color: #999;
+}
+
+.sidebar .block .title_block {
+  position: relative;
+  background: #fff;
+  font-family: Rhodium Libre;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 30px;
+  color: #f44336;
+  border-top: 3px solid #f44336;
+  line-height: normal;
+}
+
+#categories_block .block_content {
+  padding: 0 30px;
+  background: #fff;
+}
+.sidebar .block .block_content {
+  border-top: 1px solid #e6e6e6;
+}
+
+.sidebar .block_shopby .list-block {
+  margin: 0;
+}
+
+#categories_block .block_content .list-group {
+  margin: 0;
+  padding: 10px 0 15px;
+}
+
+#categories_block .block_content .list-group li {
+  position: relative;
+  padding: 0;
+}
+
+#categories_block .block_content .list-group li a {
+  color: #666;
+  text-transform: none;
+  display: block;
+  font-size: 12px;
+  padding: 8px 0;
+  line-height: 20px;
+}
+
+#categories_block .block_content .list-group li a:hover {
+  color: #f44336;
+}
+
+.sidebar .widget-banner,
+.sidebar .block_shopby {
+  margin-top: 30px;
+}
+
+.sidebar .block_shopby .block_content {
+  background: #fff;
+  padding: 10px 30px;
+}
+
+.sidebar .block_shopby .list-block li a {
+  font-family: Poppins;
+  color: #666;
+  text-transform: none;
+  display: block;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.sidebar .block_shopby .list-block li a:hover,
+.sidebar .block_shopby .list-block li.active a {
+  color: #f44336;
+}
+
+#catalog_block .block_content {
+  padding: 15px 30px;
+}
+
+#catalog_block .catalog_filters {
+  margin-top: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.catalog_subtitle_heading {
+  padding: 10px 0 0;
+}
+
+#catalog_block .catalog_subtitle {
+  font-weight: 500;
+  display: block;
+  text-transform: uppercase;
+}
+
+.catalog_filter_ul {
+  padding: 0 15px 10px;
+}
+
+#catalog_block .advanced-filter {
+  padding-left: 0;
+  padding-right: 0;
+}
+.catalog_filter_ul > li a {
+  position: relative;
+  line-height: 18px;
+  display: block;
+  font-size: 12px;
+  padding: 6px 15px;
+  color: #666;
+}
+
+.catalog_filter_ul > li a::before {
+  position: absolute;
+  content: "\f096";
+  top: 6px;
+  left: 0;
+  font-family: FontAwesome;
+  font-size: 10px;
+  color: #888;
+}
+
+#catalog_block .catalog_subtitle {
+  font-weight: 500;
+  display: block;
+  text-transform: uppercase;
+}
+
+#ul_catalog_size {
+  display: flex;
+  justify-content: start;
+  flex-flow: wrap;
+}
+
+.sidebar .block .color-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar .block .color-group > li .catalog_color {
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  border: 1px solid #666;
+  float: left;
+}
+.sidebar .block .color-group > li a {
+  line-height: 24px;
+  padding: 0 10px;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sidebar .block .color-group > li {
+  padding: 5px 0;
+}

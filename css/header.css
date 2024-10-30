@@ -298,6 +298,7 @@ nav {
 
 .dropdown-menu-inner {
     font-weight: 300;
+    color: #666666;
     font-size: 12px;
     text-align: left;
 }
@@ -400,6 +401,7 @@ header .block_content {
     font-size: 12px;
     text-align: center;
     display: block;
+    color: #666;
     height: 60px;
     text-align: left;
     font-weight: 500;
