@@ -158,13 +158,18 @@
   color: #888;
 }
 
+#ul_catalog_color > li a::before {
+  content: " ";
+}
+
 #catalog_block .catalog_subtitle {
   font-weight: 500;
   display: block;
   text-transform: uppercase;
 }
 
-#ul_catalog_size {
+#ul_catalog_size,
+#ul_catalog_color {
   display: flex;
   justify-content: start;
   flex-flow: wrap;
@@ -182,6 +187,11 @@
   border: 1px solid #666;
   float: left;
 }
+
+.catalog_filter > ul > li:hover a {
+  /* content: "\f046"; */
+  color: #f44336;
+}
 .sidebar .block .color-group > li a {
   line-height: 24px;
   padding: 0 10px;
@@ -191,4 +201,132 @@
 }
 .sidebar .block .color-group > li {
   padding: 5px 0;
+}
+
+.catalog_filter_ul > li a:hover::before {
+  content: "\f046";
+  color: #f44336;
+}
+
+.catalog_filter_ul > li a:hover {
+  color: #f44336;
+}
+
+.media:first-child {
+  margin-top: 0;
+}
+
+#products_sider_block .block_content {
+  padding-bottom: 20px;
+}
+
+.product-block {
+  position: relative;
+  margin: 0;
+  padding: 15px 15px 0;
+}
+
+.media > .pull-left {
+  margin-right: 10px;
+}
+
+.media,
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.product-block .name {
+  text-transform: none;
+  margin: 5px 0;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+.product-block .name a {
+  color: #000;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.products_block .block_content {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 0;
+}
+
+#products_viewed_block {
+  margin-top: 30px;
+}
+
+.content_scene_cat {
+  margin-bottom: 15px;
+}
+.row aside {
+  height: auto;
+}
+
+.page-heading {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Poppins;
+  color: #000;
+  line-height: 30px;
+}
+.category-heading {
+  font-size: 12px;
+  font-weight: 300;
+  padding: 9px 20px;
+  border: 1px solid #e6e6e6;
+  margin: 0;
+  color: #999;
+  background: #fff;
+}
+.collection-view {
+  text-align: left;
+}
+
+.collection-view .change-view:hover,
+.collection-view .change-view.change-view--active {
+  background: transparent;
+  color: #000;
+}
+
+.collection-view .change-view .fallback-text {
+  display: none;
+}
+
+.collection-view .change-view {
+  height: 28px;
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  color: #dbdbdb;
+}
+
+.product_list .product_block {
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #e6e6e6;
+}
+
+.product-items {
+  position: relative;
+  z-index: 99;
+}
+
+.product_list .product-items {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.product_list.product-border {
+  background: #fff;
+  padding: 0 17px;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
 }
