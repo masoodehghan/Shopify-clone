@@ -176,7 +176,6 @@ class CarouselItem extends HTMLElement {
     images[1].children[0].src = this.getAttribute("hidden-image");
     images[1].children[0].alt = baseTitle;
     
-    console.log(images);
     name.innerHTML = baseTitle
   }
   static observedAttribiutes() {

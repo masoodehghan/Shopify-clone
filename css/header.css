@@ -47,13 +47,6 @@
     line-height: 0.95rem;
 } */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.62rem;
-}
-
 .currency-icon {
   width: 17px;
   height: 17px;
@@ -72,52 +65,41 @@ nav {
   /* margin-right: 80px; */
 }
 
-.currency-block {
-  background-color: rgba(0, 0, 0, 0.25);
-  font-size: 0.7rem;
-  display: flex;
-  align-items: center;
-  padding: 0 18px 0 8px;
-  line-height: 24px;
-  position: relative;
+#currency_block {
+  margin: 8px 0;
+  padding: 0;
+  float: left;
 }
 .dropdown-menu {
-  box-shadow: rgba(0, 0, 0, 0.176) 0px 6px 12px 0;
-}
-.currency-block .dropdown-menu {
-  background-color: #fff;
-  color: #000;
-  /* display:  block ;  */
   position: absolute;
-  padding: 0;
-  transition: all 0.3s ease 0s;
-  transform: scale(0, 0);
+  top: 100%;
   z-index: 1000;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.176) 0px 6px 12px 0;
-}
-
-.currency-block:hover {
-  cursor: pointer;
-}
-
-.currency-block:hover .dropdown-menu {
-  visibility: visible;
-  display: block;
-  margin-top: 0;
-  transform: scale(1, 1);
-}
-
-.currency-block .dropdown-menu {
-  top: 25px;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px #0000002d;
   left: 0;
-  min-width: 8rem;
+  background-clip: padding-box;
+}
+
+.header_user_info {
+  float: right;
 }
 
 #currencies {
   list-style: outside none none;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
 #currencies li:hover {
@@ -125,17 +107,16 @@ nav {
   font-weight: 600;
 }
 
-#topbar-content {
-}
 /* end top bar */
 
 /* main header */
 
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-flow: row nowrap;
+#headerOne .header-wrap {
+  padding: 0;
+}
+
+#topbar nav {
+  max-height: 45px;
 }
 
 #header-main {
@@ -147,22 +128,76 @@ nav {
 }
 
 #search-submit-btn {
-  background-color: black;
-  width: 3rem;
-  height: 2.8rem;
+  background: transparent;
+  display: block;
   position: absolute;
+  top: 0;
+  right: 0;
+  border: medium none;
+  color: #666;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 38px;
+  padding: 0;
+  border-radius: 0;
 }
 
-#search-box {
+#headerOne #search-submit-btn {
+  width: 45px;
+  height: 42px;
+  line-height: 40px;
+  background: #222;
+  color: #fff;
+}
+#headerOne #header_logo {
+  padding: 28px 0;
+}
+
+#headerOne .cart-block {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+  padding: 12px 0 12px 30px;
+}
+
+#headerOne #search_block_top {
+  position: relative;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 28px;
+}
+
+#search_block_top {
+  width: 100%;
+}
+
+form#searchbox {
+  width: 100%;
   position: relative;
 }
 
-#search-box input[type="text"] {
-  width: 34rem;
+#headerOne #search_query_top {
+  background: #fff;
+  height: 42px;
+  line-height: 40px;
+  padding: 2px 60px 0 15px;
+  border: 0px;
+}
+
+#search_query_top {
+  display: inline;
+  padding: 2px 40px 2px 10px;
+  height: 40px;
+  color: #000;
+  line-height: 38px;
+  background: transparent;
+  border-color: #e6e6e6;
+  border-radius: 0;
   font-size: 12px;
-  height: 2.8rem;
-  padding: 2px 0 0 15px;
-  outline: 0;
+  font-weight: 300;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 4px #0000001a inset;
 }
 
 .cart-block {
@@ -192,10 +227,9 @@ nav {
   align-items: center;
 }
 
-.header-left,
-.header-center,
-.header-right {
-  padding: 0 15px;
+.header-wrap .header-left {
+  float: left;
+  width: 25%;
 }
 
 .inner-car {
@@ -530,4 +564,135 @@ header .product-name {
   text-align: center;
   font-size: 12px;
   display: block;
+}
+
+.e-scale.popup-over:hover .dropdown-menu,
+.e-scale.open .dropdown-menu {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.popup-over {
+  position: relative;
+  margin-right: 7px;
+}
+
+#headerOne #currency_block .popup-title {
+  background-color: #0000001a;
+}
+
+.popup-over .popup-title::before {
+  content: "\f107";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-family: FontAwesome;
+  font-size: 14px;
+}
+.popup-over .dropdown-menu {
+  display: block;
+  visibility: hidden;
+}
+
+nav .popup-title {
+  background-color: #353535;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 0 22px 0 8px;
+  position: relative;
+}
+
+#currency_block  .dropdown-menu li a {
+  color: #000;
+  padding: 0 10px;
+  line-height: 30px;
+  display: block;
+}
+
+#currency_block .dropdown-menu li a img {
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+#block_currencies .dropdown-menu li a:hover,
+#block_currencies .dropdown-menu li a.selected {
+  color: #222;
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+/* .links.dropdown-menu li {
+  display: block;
+} */
+
+.links li {
+  display: inline;
+  margin: 0;
+  line-height: 45px;
+}
+.links li a {
+  font-size: 10px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+}
+
+#headerOne #topbar a:hover {
+  color: #000;
+}
+#topbar a {
+  font-family: Poppins;
+  font-weight: 300;
+  color: #fff;
+}
+
+.popup-over:hover,
+.popup-over.open {
+  cursor: pointer;
+}
+
+.popup-over:hover .dropdown-menu,
+.popup-over.open .dropdown-menu {
+  visibility: visible;
+}
+
+.e-scale .dropdown-menu {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.e-scale.popup-over:hover .dropdown-menu,
+.e-scale.open .dropdown-menu {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header_user_info .popup-title {
+  display: none;
+}
+
+/* #topbar .header_user_info .links li a {
+  border: 0px;
+  color: #000;
+  display: block;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+} */
+
+.links.dropdown-menu li a {
+  margin: 0;
 }
