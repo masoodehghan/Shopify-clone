@@ -2,9 +2,9 @@ export const listTemplate = `
 
 <div class="row">
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
+    onscroll="test(e)"
     data-wow-delay="0ms"
-    style="visibility: visible; animation-delay: 0ms; animation-name: fadeInUp"
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -122,13 +122,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="100ms"
-    style="
-      visibility: visible;
-      animation-delay: 100ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -248,13 +244,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="200ms"
-    style="
-      visibility: visible;
-      animation-delay: 200ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -372,13 +364,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="300ms"
-    style="
-      visibility: visible;
-      animation-delay: 300ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -497,13 +485,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="400ms"
-    style="
-      visibility: visible;
-      animation-delay: 400ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -622,13 +606,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="500ms"
-    style="
-      visibility: visible;
-      animation-delay: 500ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -746,13 +726,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="600ms"
-    style="
-      visibility: visible;
-      animation-delay: 600ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -870,13 +846,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="700ms"
-    style="
-      visibility: visible;
-      animation-delay: 700ms;
-      animation-name: fadeInUp;
-    "
+   
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -994,13 +966,9 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="800ms"
-    style="
-      visibility: visible;
-      animation-delay: 800ms;
-      animation-name: fadeInUp;
-    "
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1117,13 +1085,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="900ms"
-    style="
-      visibility: visible;
-      animation-delay: 900ms;
-      animation-name: fadeInUp;
-    "
+    
+      
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1241,12 +1206,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1000ms"
-    style="
-      visibility: visible;
-      animation-delay: 1000ms;
-      animation-name: fadeInUp;
+    
+      
     "
   >
     <div class="product-container text-left product-block">
@@ -1366,13 +1329,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1100ms"
-    style="
-      visibility: visible;
-      animation-delay: 1100ms;
-      animation-name: fadeInUp;
-    "
+    
+     
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1491,13 +1451,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1200ms"
-    style="
-      visibility: visible;
-      animation-delay: 1200ms;
-      animation-name: fadeInUp;
-    "
+    
+      
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1614,13 +1571,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1300ms"
-    style="
-      visibility: visible;
-      animation-delay: 1300ms;
-      animation-name: fadeInUp;
-    "
+    
+      
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1738,13 +1692,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1400ms"
-    style="
-      visibility: visible;
-      animation-delay: 1400ms;
-      animation-name: fadeInUp;
-    "
+    
+     
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1862,13 +1813,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1500ms"
-    style="
-      visibility: visible;
-      animation-delay: 1500ms;
-      animation-name: fadeInUp;
-    "
+    
+     
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -1986,13 +1934,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1600ms"
-    style="
-      visibility: visible;
-      animation-delay: 1600ms;
-      animation-name: fadeInUp;
-    "
+    
+     
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -2109,13 +2054,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1700ms"
-    style="
-      visibility: visible;
-      animation-delay: 1700ms;
-      animation-name: fadeInUp;
-    "
+    
+      
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -2233,13 +2175,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1800ms"
-    style="
-      visibility: visible;
-      animation-delay: 1800ms;
-      animation-name: fadeInUp;
-    "
+    
+    
   >
     <div class="product-container text-left product-block">
       <div class="row">
@@ -2357,13 +2296,10 @@ export const listTemplate = `
   </div>
 
   <div
-    class="product_block wow fadeInUp col-xs-12 col-sp-12 animated"
+    class="product_block wow fadeInUp col-xs-12 col-sp-12"
     data-wow-delay="1900ms"
-    style="
-      visibility: visible;
-      animation-delay: 1900ms;
-      animation-name: fadeInUp;
-    "
+    
+     
   >
     <div class="product-container text-left product-block">
       <div class="row">

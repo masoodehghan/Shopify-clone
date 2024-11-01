@@ -3,11 +3,7 @@ export const gridTemplate = `
 
 <div class="product-items">
 <div class="row">
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="0ms" style="
-      visibility: visible;
-      animation-delay: 0ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="0ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/acer-g226hql-bbd-21-5-inch-full-hd-1920-x-1080-widescreen-display" title="Acer G226HQL Bbd 21.5-inch Full HD (1920 x 1080) Widescreen Display">
@@ -76,11 +72,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="100ms" style="
-      visibility: visible;
-      animation-delay: 100ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="100ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/allegra-k-women-short-sleeve-stripe-drawstring-mini-tee-dresses-with-pockets" title="Allegra K Women Short Sleeve Stripe Drawstring Mini Tee Dresses with Pockets">
@@ -150,11 +142,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="200ms" style="
-      visibility: visible;
-      animation-delay: 200ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="200ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/benq-mh740-1080p-dlp-3d-projector" title="BenQ MH740 1080p DLP 3D Projector">
@@ -223,11 +211,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="300ms" style="
-      visibility: visible;
-      animation-delay: 300ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="300ms" >
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/bibigirl-womens-plus-size-loose-shift-dress" title="Bibigirl Women's Plus Size Loose Shift Dress">
@@ -300,11 +284,7 @@ export const gridTemplate = `
 
 <div class="product-items">
 <div class="row">
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="400ms" style="
-      visibility: visible;
-      animation-delay: 400ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="400ms" >
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/boss-office-products-reception-sectional-corner-sofa-traditional-black" title="Boss Office Products Reception Sectional Corner Sofa, Traditional, Black">
@@ -374,11 +354,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="500ms" style="
-      visibility: visible;
-      animation-delay: 500ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="500ms" >
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/denon-dht-391xp-5-1-channel-home-theater-system" title="Denon DHT-391XP 5.1 Channel Home Theater System">
@@ -448,11 +424,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="600ms" style="
-      visibility: visible;
-      animation-delay: 600ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="600ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/eureka-easyclean-corded-hand-held-vacuum" title="Eureka EasyClean Corded Hand-Held Vacuum">
@@ -521,11 +493,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="700ms" style="
-      visibility: visible;
-      animation-delay: 700ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="700ms" >
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/ever-pretty-floral-printed-round-neckline-bow-padded-short" title="Ever Pretty Floral Printed Round Neckline Bow Padded Short">
@@ -599,11 +567,7 @@ export const gridTemplate = `
 
 <div class="product-items">
 <div class="row">
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="800ms" style="
-      visibility: visible;
-      animation-delay: 800ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="800ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/fisher-price-octonauts-octopod-playset" title="Fisher-Price Octonauts Octopod Playset">
@@ -672,11 +636,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="900ms" style="
-      visibility: visible;
-      animation-delay: 900ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="900ms" >
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/manhattan-toy-winkel-rattle-and-sensory-teether-activity-toy" title="Manhattan Toy Winkel Rattle and Sensory Teether Activity Toy">
@@ -746,11 +706,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="1000ms" style="
-      visibility: visible;
-      animation-delay: 1000ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="1000ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/samsung-bd-hm57cza-wi-fi-blu-ray-player-manufacturer-refurbished" title="Samsung BD-HM57CZA Wi-Fi Blu Ray Player Manufacturer Refurbished">
@@ -820,11 +776,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="1100ms" style="
-      visibility: visible;
-      animation-delay: 1100ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="1100ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/surefit-35828-2-peice-stretch-pinstripe-t-cushion-loveseat-french-blue" title="Surefit 35828 2 Peice Stretch Pinstripe T Cushion Loveseat, French Blue">
@@ -898,11 +850,7 @@ export const gridTemplate = `
 
 <div class="product-items">
 <div class="row">
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="1200ms" style="
-      visibility: visible;
-      animation-delay: 1200ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="1200ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/transformers-generations-combiner-wars-devastator-figure-set" title="Transformers Generations Combiner Wars Devastator Figure Set">
@@ -972,11 +920,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="1300ms" style="
-      visibility: visible;
-      animation-delay: 1300ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="1300ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/vtech-alphabet-apple" title="VTech Alphabet Apple">
@@ -1045,11 +989,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="1400ms" style="
-      visibility: visible;
-      animation-delay: 1400ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="1400ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/vtech-babys-learning-laptop-blue" title="VTech Baby's Learning Laptop, Blue">
@@ -1118,11 +1058,7 @@ export const gridTemplate = `
     </div>
   </div>
 
-  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12 animated" data-wow-delay="1500ms" style="
-      visibility: visible;
-      animation-delay: 1500ms;
-      animation-name: fadeIn;
-    ">
+  <div class="product_block wow fadeIn col-md-3 col-xs-6 col-sp-12" data-wow-delay="1500ms">
     <div class="product-container text-left product-block">
       <div class="product-image-container image">
         <a class="product_img_link" href="/collections/all/products/zeagoo-women-chiffon-one-shoulder-sleeveless-high-waist-contrast-color-short-dress" title="Zeagoo Women Chiffon One Shoulder Sleeveless High Waist Contrast Color Short Dress">
