@@ -357,3 +357,17 @@
   border: 0px;
   border-bottom: 1px solid #e6e6e6;
 }
+
+.ajax_addtocart:hover {
+  background: #000;
+  color: #ff9100;
+  border: 1px solid black;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.product_list.list .ajax_addtocart span {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 10px 0 0;
+}

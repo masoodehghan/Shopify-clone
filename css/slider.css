@@ -1,33 +1,32 @@
-.nivo-caption .caption_1 .text_first, 
+.nivo-caption .caption_1 .text_first,
 .nivo-caption .caption_2 .text_first,
-.nivo-caption .caption_3 .text_first
-{
+.nivo-caption .caption_3 .text_first {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-.nivo-caption .caption_1 h3, .nivo-caption .caption_2 h3,
+.nivo-caption .caption_1 h3,
+.nivo-caption .caption_2 h3,
 .nivo-caption .caption_3 h3 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-.nivo-caption .caption_1  p,
-.nivo-caption .caption_2  p,
-.nivo-caption .caption_3  p 
-{
+.nivo-caption .caption_1 p,
+.nivo-caption .caption_2 p,
+.nivo-caption .caption_3 p {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 
-.nivo-caption  .caption_1 a,
+.nivo-caption .caption_1 a,
 .nivo-caption .caption_2 a,
-.nivo-caption .caption_3 a
-{
+.nivo-caption .caption_3 a {
   -webkit-animation-delay: 2s;
   animation-delay: 2.5s;
 }
 
-.fadeIn, .nivo-caption .caption_1 .text_first,
+.fadeIn,
+.nivo-caption .caption_1 .text_first,
 .nivo-caption .caption_2 .text_first,
 .nivo-caption .caption_3 .text_first {
   -webkit-animation-name: fade;
@@ -45,10 +44,7 @@
 
 .bounceInRight,
 .nivo-caption h3,
-.nivo-caption  p 
-
-{
-
+.nivo-caption p {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
   -webkit-animation-duration: 1s;
@@ -62,10 +58,10 @@
   animation-iteration-count: none;
 }
 
-
-.bounceIn, .nivo-caption .caption_1 a, .nivo-caption .caption_2 a,
-.nivo-caption .caption_3 a
-{
+.bounceIn,
+.nivo-caption .caption_1 a,
+.nivo-caption .caption_2 a,
+.nivo-caption .caption_3 a {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
   -webkit-animation-duration: 1s;
@@ -78,7 +74,6 @@
   -webkit-animation-iteration-count: none;
   animation-iteration-count: none;
 }
-
 
 #slideshow .slider-container {
   overflow: hidden;
@@ -168,8 +163,6 @@
   letter-spacing: 0;
 }
 
-
-
 .slide-caption .btn-slide {
   border: 1px solid #f44336;
   background: #f44336;
@@ -216,3 +209,6 @@
   display: none;
 }
 
+.nivo-controlNav {
+  display: none;
+}
