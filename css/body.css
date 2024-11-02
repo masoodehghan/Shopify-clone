@@ -74,6 +74,7 @@ ol {
 
 .container {
   padding: 0 15px;
+  max-width: 100%;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -146,6 +147,10 @@ input[type="search"] {
 .col-sm-11,
 .col-sm-12 {
   float: left;
+}
+
+.col-xs-12 {
+  width: 100%;
 }
 
 .col-xs-1,
