@@ -371,3 +371,7 @@
 	vertical-align: middle;
 	padding: 0 10px 0 0;
 }
+
+#products_viewed_block, #products_sider_block {
+	margin-top: 30px;
+}
