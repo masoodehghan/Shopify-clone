@@ -13,6 +13,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .col-lg-10 {
+    width: 83.33333%;
+  }
   .container {
     width: 1000px;
   }
@@ -46,6 +49,12 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .col-lg-10 {
+    width: 83.33333%;
+  }
+  .col-lg-2 {
+    width: 16.66667%;
   }
 }
 

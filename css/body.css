@@ -76,6 +76,15 @@ ol {
   width: 50%;
 }
 
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .container {
   padding: 0 15px;
   max-width: 100%;

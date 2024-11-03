@@ -1,3 +1,5 @@
+
+
 .pgmLeft::before {
   content: "";
   position: absolute;
@@ -72,17 +74,85 @@
   position: relative;
 }
 
-.blockGolMart .block-title h3 {
+.blockGolMart .block-title h3  {
   margin: 0;
   padding: 24px 0 20px;
   font-family: Rhodium Libre;
   font-size: 14px;
   font-weight: 500;
-  color: #f54337;
   line-height: 20px;
   border-bottom: 1px solid #e6e6e6;
   text-transform: uppercase;
 }
+
+:root {
+  --color-one: #f54337;
+  --color-two: #3F51B5;
+  --color-three: #03A9F5;
+  --color-four: #8CC34B;
+  --color-five: #FFE035;
+  --color-six: #FF9801;
+  --color-seven: #7A564A;
+  --color-eight: #00968A;
+}
+
+.blockGolMart.One .block-title h3  {
+   color: var(--color-one);
+}
+
+
+.blockGolMart.Two .block-title h3  {
+  color: var(--color-two);
+}
+
+.blockGolMart.Three .block-title h3  {
+  color: var(--color-three);
+}
+
+.blockGolMart.Four .block-title h3  {
+  color: var(--color-four);
+}
+
+.blockGolMart.Five .block-title h3  {
+  color: var(--color-five);
+}
+
+.blockGolMart.Six .block-title h3  {
+  color: var(--color-six);
+}
+.blockGolMart.Seven .block-title h3  {
+  color: var(--color-seven);
+}
+.blockGolMart.Eight .block-title h3  {
+  color: var(--color-eight);
+}
+
+.blockGolMart.One .pgmLeft::before {
+  background-color: var(--color-one);
+}
+.blockGolMart.Two .pgmLeft::before {
+  background-color: var(--color-two);
+}
+.blockGolMart.Three .pgmLeft::before {
+  background-color: var(--color-three);
+}
+.blockGolMart.Four .pgmLeft::before {
+  background-color: var(--color-four);
+}
+.blockGolMart.Five .pgmLeft::before {
+  background-color: var(--color-five);
+}
+.blockGolMart.Six .pgmLeft::before {
+  background-color: var(--color-six);
+}
+.blockGolMart.Seven .pgmLeft::before {
+  background-color: var(--color-seven);
+}
+.blockGolMart.Eight .pgmLeft::before {
+  background-color: var(--color-eight);
+}
+
+
 
 .blockGolMart .nav-tabs > li.active > a {
   color: #000;
@@ -192,4 +262,8 @@
   height: 0;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+
+.owl-dots {
+  display: none;
 }
