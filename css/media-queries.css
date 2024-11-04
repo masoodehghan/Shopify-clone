@@ -242,6 +242,9 @@
   .sidebar .block .title_block.active::after {
     content: "\f106";
   }
+  .hidden-xs {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 480px) {

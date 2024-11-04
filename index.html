@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/slider.css" type="text/css" />
     <link rel="stylesheet" href="css/media-queries.css" type="text/css" />
+    <link rel="stylesheet" href="css/fixed-panel.css" type="text/css">
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
@@ -2547,233 +2548,238 @@
                                             </div>
                                           </div>
                                         </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                              <script type="text/javascript">
-                                $(window).on("load", function () {
-                                  jQuery(function ($) {
-                                    $(
-                                      "#proListGolMartThree .owl-carousel"
-                                    ).each(function () {
-                                      $(this).owlCarousel({
-                                        items: 4,
-                                        lazyLoad: true,
-                                        nav: false,
-                                        addClassActive: true,
-                                        afterInit: SetOwlCarouselFirstLast,
-                                        afterAction: SetOwlCarouselFirstLast,
-                                        autoplay: 8000,
-                                        responsiveBaseElement: "body",
-                                        responsive: {
-                                          0: {
-                                            items: 1,
+                                <script type="text/javascript">
+                                  $(window).on("load", function () {
+                                    jQuery(function ($) {
+                                      $(
+                                        "#proListGolMartThree .owl-carousel"
+                                      ).each(function () {
+                                        $(this).owlCarousel({
+                                          items: 4,
+                                          lazyLoad: true,
+                                          nav: false,
+                                          addClassActive: true,
+                                          afterInit: SetOwlCarouselFirstLast,
+                                          afterAction: SetOwlCarouselFirstLast,
+                                          autoplay: 8000,
+                                          responsiveBaseElement: "body",
+                                          responsive: {
+                                            0: {
+                                              items: 1,
+                                            },
+                                            500: {
+                                              items: 2,
+                                            },
+                                            1000: {
+                                              items: 3,
+                                            },
+                                            1200: {
+                                              items: 4,
+                                            },
                                           },
-                                          500: {
-                                            items: 2,
-                                          },
-                                          1000: {
-                                            items: 3,
-                                          },
-                                          1200: {
-                                            items: 4,
-                                          },
-                                        },
-                                        navContainer:
-                                          "#categoryTabThree1 .owl-controls",
-                                        navText: ["Prev", "Next"],
+                                          navContainer:
+                                            "#categoryTabThree1 .owl-controls",
+                                          navText: ["Prev", "Next"],
+                                        });
                                       });
+                                      function SetOwlCarouselFirstLast(el) {
+                                        el.find(".owl-item").removeClass(
+                                          "first"
+                                        );
+                                        el.find(".owl-item.active")
+                                          .first()
+                                          .addClass("first");
+                                        el.find(".owl-item").removeClass(
+                                          "last"
+                                        );
+                                        el.find(".owl-item.active")
+                                          .last()
+                                          .addClass("last");
+                                      }
                                     });
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
                                   });
-                                });
-                              </script>
+                                </script>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12">
-                        <div class="row-inner">
-                          <div
-                            id="proListGolMartFour"
-                            class="block categoryTabs floor-fixed-panel-play"
-                          >
-                            <div class="block-content blockGolMart Four">
-                              <div class="row no-gutter">
-                                <div
-                                  class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmLeft">
-                                    <div class="block-title">
-                                      <h3>Home, Garden <br />&amp; Tools</h3>
-                                    </div>
-                                    <div class="tab-nav">
-                                      <ul class="nav nav-tabs">
-                                        <li class="active">
-                                          <a
-                                            href="#categoryTabFour1"
-                                            data-toggle="tab"
-                                            >Home</a
-                                          >
-                                        </li>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                          <div class="row-inner">
+                            <div
+                              id="proListGolMartFour"
+                              class="block categoryTabs floor-fixed-panel-play"
+                            >
+                              <div class="block-content blockGolMart Four">
+                                <div class="row no-gutter">
+                                  <div
+                                    class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="pgmLeft">
+                                      <div class="block-title">
+                                        <h3>Home, Garden <br />&amp; Tools</h3>
+                                      </div>
+                                      <div class="tab-nav">
+                                        <ul class="nav nav-tabs">
+                                          <li class="active">
+                                            <a
+                                              href="#categoryTabFour1"
+                                              data-toggle="tab"
+                                              >Home</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour2"
-                                            data-toggle="tab"
-                                            >Kitchen &amp; Dining</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour2"
+                                              data-toggle="tab"
+                                              >Kitchen &amp; Dining</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour3"
-                                            data-toggle="tab"
-                                            >Furniture &amp; Décor</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour3"
+                                              data-toggle="tab"
+                                              >Furniture &amp; Décor</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour4"
-                                            data-toggle="tab"
-                                            >Bedding &amp; Bath</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour4"
+                                              data-toggle="tab"
+                                              >Bedding &amp; Bath</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour5"
-                                            data-toggle="tab"
-                                            >Appliances</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour5"
+                                              data-toggle="tab"
+                                              >Appliances</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour6"
-                                            data-toggle="tab"
-                                            >Patio, Lawn &amp; Garden</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour6"
+                                              data-toggle="tab"
+                                              >Patio, Lawn &amp; Garden</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour7"
-                                            data-toggle="tab"
-                                            >Fine Art</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour7"
+                                              data-toggle="tab"
+                                              >Fine Art</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour8"
-                                            data-toggle="tab"
-                                            >Arts, Crafts &amp; Sewing</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour8"
+                                              data-toggle="tab"
+                                              >Arts, Crafts &amp; Sewing</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour9"
-                                            data-toggle="tab"
-                                            >Pet Supplies</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour9"
+                                              data-toggle="tab"
+                                              >Pet Supplies</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFour10"
-                                            data-toggle="tab"
-                                            >Wedding Registry</a
-                                          >
-                                        </li>
-                                      </ul>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFour10"
+                                              data-toggle="tab"
+                                              >Wedding Registry</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div
-                                  class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmRight">
-                                    <div class="tab-content">
-                                      <div
-                                        id="categoryTabFour1"
-                                        class="tab-pane box-products active"
-                                      >
-                                        <div class="product_list_owl">
-                                          <div
-                                            class="owl-carousel slide owl-theme"
-                                          >
-                                            <carousel-item
-                                              base-title="Curabitur in risus a elit ornare condimentum"
-                                              main-image="./product-images/41.webp"
-                                              hidden-image="./product-images/41_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Nulla facilisi. In hac habitasse platea dictumst"
-                                              main-image="./product-images/42.webp"
-                                              hidden-image="./product-images/42_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
-                                              main-image="./product-images/43.webp"
-                                              hidden-image="./product-images/43_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Vivamus in augue tempus, iaculis velit eu, pulvinar dolor. "
-                                              main-image="./product-images/44.webp"
-                                              hidden-image="./product-images/44_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="vehicula luctus sapien a lacinia. Aliquam ut luctus lorem"
-                                              main-image="./product-images/45.webp"
-                                              hidden-image="./product-images/45_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Phasellus sit amet nisl urna. Morbi quis interdum ex."
-                                              main-image="./product-images/46.webp"
-                                              hidden-image="./product-images/46_large.webp"
-                                            ></carousel-item>
+                                  <div
+                                    class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="pgmRight">
+                                      <div class="tab-content">
+                                        <div
+                                          id="categoryTabFour1"
+                                          class="tab-pane box-products active"
+                                        >
+                                          <div class="product_list_owl">
+                                            <div
+                                              class="owl-carousel slide owl-theme"
+                                            >
+                                              <carousel-item
+                                                base-title="Curabitur in risus a elit ornare condimentum"
+                                                main-image="./product-images/41.webp"
+                                                hidden-image="./product-images/41_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="Nulla facilisi. In hac habitasse platea dictumst"
+                                                main-image="./product-images/42.webp"
+                                                hidden-image="./product-images/42_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
+                                                main-image="./product-images/43.webp"
+                                                hidden-image="./product-images/43_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="Vivamus in augue tempus, iaculis velit eu, pulvinar dolor. "
+                                                main-image="./product-images/44.webp"
+                                                hidden-image="./product-images/44_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="vehicula luctus sapien a lacinia. Aliquam ut luctus lorem"
+                                                main-image="./product-images/45.webp"
+                                                hidden-image="./product-images/45_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="Phasellus sit amet nisl urna. Morbi quis interdum ex."
+                                                main-image="./product-images/46.webp"
+                                                hidden-image="./product-images/46_large.webp"
+                                              ></carousel-item>
+                                            </div>
+                                            <div class="owl-controls"></div>
                                           </div>
-                                          <div class="owl-controls"></div>
                                         </div>
                                       </div>
-                                    </div>
-                                    <div class="bannerGolMart">
-                                      <div class="image-box">
-                                        <div class="img-banner effectOne">
-                                          <a href="/collections/all">
-                                            <img
-                                              src="./product-images/banner4.webp"
-                                              alt=""
-                                              class="img-responsive"
-                                            />
-                                          </a>
+                                      <div class="bannerGolMart">
+                                        <div class="image-box">
+                                          <div class="img-banner effectOne">
+                                            <a href="/collections/all">
+                                              <img
+                                                src="./product-images/banner4.webp"
+                                                alt=""
+                                                class="img-responsive"
+                                              />
+                                            </a>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                              <script type="text/javascript">
-                                $(window).on("load", function () {
-                                  jQuery(function ($) {
-                                    $("#proListGolMartFour .owl-carousel").each(
-                                      function () {
+                                <script type="text/javascript">
+                                  $(window).on("load", function () {
+                                    jQuery(function ($) {
+                                      $(
+                                        "#proListGolMartFour .owl-carousel"
+                                      ).each(function () {
                                         $(this).owlCarousel({
                                           items: 4,
                                           lazyLoad: true,
@@ -2801,944 +2807,976 @@
                                             "#categoryTabFour1 .owl-controls",
                                           navText: ["Prev", "Next"],
                                         });
+                                      });
+                                      function SetOwlCarouselFirstLast(el) {
+                                        el.find(".owl-item").removeClass(
+                                          "first"
+                                        );
+                                        el.find(".owl-item.active")
+                                          .first()
+                                          .addClass("first");
+                                        el.find(".owl-item").removeClass(
+                                          "last"
+                                        );
+                                        el.find(".owl-item.active")
+                                          .last()
+                                          .addClass("last");
                                       }
-                                    );
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
+                                    });
                                   });
-                                });
-                              </script>
+                                </script>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12">
-                        <div class="row-inner">
-                          <div
-                            id="proListGolMartFive"
-                            class="block categoryTabs floor-fixed-panel-play"
-                          >
-                            <div class="block-content blockGolMart Five">
-                              <div class="row no-gutter">
-                                <div
-                                  class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmLeft">
-                                    <div class="block-title">
-                                      <h3>Decor <br />&amp; Furniture</h3>
-                                    </div>
-                                    <div class="tab-nav">
-                                      <ul class="nav nav-tabs">
-                                        <li class="active">
-                                          <a
-                                            href="#categoryTabFive1"
-                                            data-toggle="tab"
-                                            >Sofas &amp; Loveseats</a
-                                          >
-                                        </li>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                          <div class="row-inner">
+                            <div
+                              id="proListGolMartFive"
+                              class="block categoryTabs floor-fixed-panel-play"
+                            >
+                              <div class="block-content blockGolMart Five">
+                                <div class="row no-gutter">
+                                  <div
+                                    class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="pgmLeft">
+                                      <div class="block-title">
+                                        <h3>Decor <br />&amp; Furniture</h3>
+                                      </div>
+                                      <div class="tab-nav">
+                                        <ul class="nav nav-tabs">
+                                          <li class="active">
+                                            <a
+                                              href="#categoryTabFive1"
+                                              data-toggle="tab"
+                                              >Sofas &amp; Loveseats</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive2"
-                                            data-toggle="tab"
-                                            >Coffee, Sofa</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive2"
+                                              data-toggle="tab"
+                                              >Coffee, Sofa</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive3"
-                                            data-toggle="tab"
-                                            >Living Room Chairs</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive3"
+                                              data-toggle="tab"
+                                              >Living Room Chairs</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive4"
-                                            data-toggle="tab"
-                                            >Ottomans</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive4"
+                                              data-toggle="tab"
+                                              >Ottomans</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive5"
-                                            data-toggle="tab"
-                                            >Benches</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive5"
+                                              data-toggle="tab"
+                                              >Benches</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive6"
-                                            data-toggle="tab"
-                                            >Media/Bookshelves</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive6"
+                                              data-toggle="tab"
+                                              >Media/Bookshelves</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive7"
-                                            data-toggle="tab"
-                                            >Sectional Sofas</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive7"
+                                              data-toggle="tab"
+                                              >Sectional Sofas</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive8"
-                                            data-toggle="tab"
-                                            >Recliners</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive8"
+                                              data-toggle="tab"
+                                              >Recliners</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive9"
-                                            data-toggle="tab"
-                                            >Futons</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive9"
+                                              data-toggle="tab"
+                                              >Futons</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive10"
-                                            data-toggle="tab"
-                                            >Lounge Chairs</a
-                                          >
-                                        </li>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive10"
+                                              data-toggle="tab"
+                                              >Lounge Chairs</a
+                                            >
+                                          </li>
 
-                                        <li>
-                                          <a
-                                            href="#categoryTabFive11"
-                                            data-toggle="tab"
-                                            >Living Room Sets</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmRight">
-                                    <div class="tab-content">
-                                      <div
-                                        id="categoryTabFive1"
-                                        class="tab-pane box-products active"
-                                      >
-                                        <div class="product_list_owl">
-                                          <div
-                                            class="owl-carousel slide owl-theme"
-                                          >
-                                            <carousel-item
-                                              base-title="elit, sit amet commodo tellus suscipit vel."
-                                              main-image="./product-images/44.webp"
-                                              hidden-image="./product-images/44_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="quam vel, scelerisque est. Integer ut tellus"
-                                              main-image="./product-images/51.webp"
-                                              hidden-image="./product-images/51_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Cras eget est vitae diam molestie lacinia a eget massa"
-                                              main-image="./product-images/52.webp"
-                                              hidden-image="./product-images/52_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="tempor, erat urna suscipit lorem"
-                                              main-image="./product-images/53.webp"
-                                              hidden-image="./product-images/53_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
-                                              main-image="./product-images/43.webp"
-                                              hidden-image="./product-images/43_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Pellentesque feugiat libero quis orci molestie"
-                                              main-image="./product-images/23.webp"
-                                              hidden-image="./product-images/23_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Duis ornare magna vel laoreet dictum. Nulla"
-                                              main-image="./product-images/26.webp"
-                                              hidden-image="./product-images/26_large.webp"
-                                            ></carousel-item>
-                                          </div>
-                                          <div class="owl-controls"></div>
-                                        </div>
+                                          <li>
+                                            <a
+                                              href="#categoryTabFive11"
+                                              data-toggle="tab"
+                                              >Living Room Sets</a
+                                            >
+                                          </li>
+                                        </ul>
                                       </div>
                                     </div>
-                                    <div class="bannerGolMart">
-                                      <div class="row no-gutter">
-                                        <div class="col-xs-12 col-sm-6">
-                                          <div class="image-box">
-                                            <div class="img-banner effectOne">
-                                              <a href="/collections/all">
-                                                <img
-                                                  src="./product-images/banner51.webp"
-                                                  alt=""
-                                                  class="img-responsive"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                          <div class="image-box">
-                                            <div class="img-banner effectOne">
-                                              <a href="/collections/all">
-                                                <img
-                                                  src="./product-images/banner52.webp"
-                                                  alt=""
-                                                  class="img-responsive"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
                                   </div>
-                                </div>
-                              </div>
-                              <script type="text/javascript">
-                                $(window).on("load", function () {
-                                  jQuery(function ($) {
-                                    $("#proListGolMartFive .owl-carousel").each(
-                                      function () {
-                                        $(this).owlCarousel({
-                                          items: 4,
-                                          lazyLoad: true,
-                                          nav: false,
-                                          addClassActive: true,
-                                          afterInit: SetOwlCarouselFirstLast,
-                                          afterAction: SetOwlCarouselFirstLast,
-                                          autoplay: 8000,
-                                          responsiveBaseElement: "body",
-                                          responsive: {
-                                            0: {
-                                              items: 1,
-                                            },
-                                            500: {
-                                              items: 2,
-                                            },
-                                            1000: {
-                                              items: 3,
-                                            },
-                                            1200: {
-                                              items: 4,
-                                            },
-                                          },
-                                          navContainer:
-                                            "#categoryTabFive1 .owl-controls",
-                                          navText: ["Prev", "Next"],
-                                        });
-                                      }
-                                    );
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
-                                  });
-                                });
-                              </script>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12">
-                        <div class="row-inner">
-                          <div
-                            id="proListGolMartSix"
-                            class="block categoryTabs floor-fixed-panel-play"
-                          >
-                            <div class="block-content blockGolMart Six">
-                              <div class="row no-gutter">
-                                <div
-                                  class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmLeft">
-                                    <div class="block-title">
-                                      <h3>Sports <br />&amp; Outdoors</h3>
-                                    </div>
-                                    <div class="tab-nav">
-                                      <ul class="nav nav-tabs">
-                                        <li class="active">
-                                          <a
-                                            href="#categoryTabSix1"
-                                            data-toggle="tab"
-                                            >Athletic Clothing</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix2"
-                                            data-toggle="tab"
-                                            >Exercise &amp; Fitness</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix3"
-                                            data-toggle="tab"
-                                            >Hunting &amp; Fishing</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix4"
-                                            data-toggle="tab"
-                                            >Team Sports</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix5"
-                                            data-toggle="tab"
-                                            >Fan Shop</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix6"
-                                            data-toggle="tab"
-                                            >Golf</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix7"
-                                            data-toggle="tab"
-                                            >Leisure Sports</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix8"
-                                            data-toggle="tab"
-                                            >Sports Collectibles</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix9"
-                                            data-toggle="tab"
-                                            >All Sports &amp; Fitness</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix10"
-                                            data-toggle="tab"
-                                            >Camping &amp; Hiking</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSix11"
-                                            data-toggle="tab"
-                                            >Cycling</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmRight">
-                                    <div class="tab-content">
-                                      <div
-                                        id="categoryTabSix1"
-                                        class="tab-pane box-products active"
-                                      >
-                                        <div class="product_list_owl">
-                                          <div
-                                            class="owl-carousel slide owl-theme"
-                                          >
-                                            <carousel-item
-                                              base-title="mattis dui placerat suscipit. Nullam luctus "
-                                              main-image="./product-images/61.webp"
-                                              hidden-image="./product-images/61_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="lacus imperdiet sed. Vestibulum vel dapibus nibh"
-                                              main-image="./product-images/62.webp"
-                                              hidden-image="./product-images/62_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="efficitur at sapien vitae, faucibus porttitor leo."
-                                              main-image="./product-images/63.webp"
-                                              hidden-image="./product-images/63_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="consectetur convallis magna. Fusce a enim nec sapien "
-                                              main-image="./product-images/64.webp"
-                                              hidden-image="./product-images/64_large.webp"
-                                            ></carousel-item>
+                                  <div
+                                    class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="pgmRight">
+                                      <div class="tab-content">
+                                        <div
+                                          id="categoryTabFive1"
+                                          class="tab-pane box-products active"
+                                        >
+                                          <div class="product_list_owl">
+                                            <div
+                                              class="owl-carousel slide owl-theme"
+                                            >
+                                              <carousel-item
+                                                base-title="elit, sit amet commodo tellus suscipit vel."
+                                                main-image="./product-images/44.webp"
+                                                hidden-image="./product-images/44_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="quam vel, scelerisque est. Integer ut tellus"
+                                                main-image="./product-images/51.webp"
+                                                hidden-image="./product-images/51_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="Cras eget est vitae diam molestie lacinia a eget massa"
+                                                main-image="./product-images/52.webp"
+                                                hidden-image="./product-images/52_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="tempor, erat urna suscipit lorem"
+                                                main-image="./product-images/53.webp"
+                                                hidden-image="./product-images/53_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
+                                                main-image="./product-images/43.webp"
+                                                hidden-image="./product-images/43_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="Pellentesque feugiat libero quis orci molestie"
+                                                main-image="./product-images/23.webp"
+                                                hidden-image="./product-images/23_large.webp"
+                                              ></carousel-item>
+                                              <carousel-item
+                                                base-title="Duis ornare magna vel laoreet dictum. Nulla"
+                                                main-image="./product-images/26.webp"
+                                                hidden-image="./product-images/26_large.webp"
+                                              ></carousel-item>
+                                            </div>
+                                            <div class="owl-controls"></div>
                                           </div>
-                                          <div class="owl-controls"></div>
                                         </div>
                                       </div>
-                                    </div>
-                                    <div class="bannerGolMart">
-                                      <div class="image-box">
-                                        <div class="img-banner effectOne">
-                                          <a href="/collections/all">
-                                            <img
-                                              src="./product-images/banner61.webp"
-                                              alt=""
-                                              class="img-responsive"
-                                            />
-                                          </a>
+                                      <div class="bannerGolMart">
+                                        <div class="row no-gutter">
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="image-box">
+                                              <div class="img-banner effectOne">
+                                                <a href="/collections/all">
+                                                  <img
+                                                    src="./product-images/banner51.webp"
+                                                    alt=""
+                                                    class="img-responsive"
+                                                  />
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="image-box">
+                                              <div class="img-banner effectOne">
+                                                <a href="/collections/all">
+                                                  <img
+                                                    src="./product-images/banner52.webp"
+                                                    alt=""
+                                                    class="img-responsive"
+                                                  />
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                              <script type="text/javascript">
-                                $(window).on("load", function () {
-                                  jQuery(function ($) {
-                                    $("#proListGolMartSix .owl-carousel").each(
-                                      function () {
-                                        $(this).owlCarousel({
-                                          items: 4,
-                                          lazyLoad: true,
-                                          nav: false,
-                                          addClassActive: true,
-                                          afterInit: SetOwlCarouselFirstLast,
-                                          afterAction: SetOwlCarouselFirstLast,
-                                          autoplay: 8000,
-                                          responsiveBaseElement: "body",
-                                          responsive: {
-                                            0: {
-                                              items: 1,
-                                            },
-                                            500: {
-                                              items: 2,
-                                            },
-                                            1000: {
-                                              items: 3,
-                                            },
-                                            1200: {
-                                              items: 4,
-                                            },
-                                          },
-                                          navContainer:
-                                            "#categoryTabSix1 .owl-controls",
-                                          navText: ["Prev", "Next"],
-                                        });
-                                      }
-                                    );
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
-                                  });
-                                });
-                              </script>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12">
-                        <div class="row-inner">
-                          <div
-                            id="proListGolMartSeven"
-                            class="block categoryTabs floor-fixed-panel-play"
-                          >
-                            <div class="block-content blockGolMart Seven">
-                              <div class="row no-gutter">
-                                <div
-                                  class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmLeft">
-                                    <div class="block-title">
-                                      <h3>
-                                        Gifts, Parties <br />&amp; Holiday
-                                      </h3>
-                                    </div>
-                                    <div class="tab-nav">
-                                      <ul class="nav nav-tabs">
-                                        <li class="active">
-                                          <a
-                                            href="#categoryTabSeven1"
-                                            data-toggle="tab"
-                                            >Sofas &amp; Loveseats</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven2"
-                                            data-toggle="tab"
-                                            >Coffee, Sofa</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven3"
-                                            data-toggle="tab"
-                                            >Living Room Chairs</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven4"
-                                            data-toggle="tab"
-                                            >Ottomans</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven5"
-                                            data-toggle="tab"
-                                            >Benches</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven6"
-                                            data-toggle="tab"
-                                            >Media/Bookshelves</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven7"
-                                            data-toggle="tab"
-                                            >Sectional Sofas</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven8"
-                                            data-toggle="tab"
-                                            >Recliners</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven9"
-                                            data-toggle="tab"
-                                            >Futons</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven10"
-                                            data-toggle="tab"
-                                            >Lounge Chairs</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabSeven11"
-                                            data-toggle="tab"
-                                            >Living Room Sets</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmRight">
-                                    <div class="tab-content">
-                                      <div
-                                        id="categoryTabSeven1"
-                                        class="tab-pane box-products active"
-                                      >
-                                        <div class="product_list_owl">
-                                          <div
-                                            class="owl-carousel slide owl-theme"
-                                          >
-                                            <carousel-item
-                                              base-title="tempor, erat urna suscipit lorem"
-                                              main-image="./product-images/53.webp"
-                                              hidden-image="./product-images/53_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="tempor, erat urna suscipit lorem"
-                                              main-image="./product-images/52.webp"
-                                              hidden-image="./product-images/52_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="quam vel, scelerisque est. Integer ut tellus"
-                                              main-image="./product-images/51.webp"
-                                              hidden-image="./product-images/51_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Pellentesque feugiat libero quis orci molestie"
-                                              main-image="./product-images/23.webp"
-                                              hidden-image="./product-images/23_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Nulla facilisi. In hac habitasse platea dictumst"
-                                              main-image="./product-images/42.webp"
-                                              hidden-image="./product-images/42_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Curabitur in risus a elit ornare condimentum"
-                                              main-image="./product-images/41.webp"
-                                              hidden-image="./product-images/41_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
-                                              main-image="./product-images/43.webp"
-                                              hidden-image="./product-images/43_large.webp"
-                                            ></carousel-item>
-                                          </div>
-                                          <div class="owl-controls"></div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="bannerGolMart">
-                                      <div class="row no-gutter">
-                                        <div class="col-xs-12 col-sm-6">
-                                          <div class="image-box">
-                                            <div class="img-banner effectOne">
-                                              <a href="/collections/all">
-                                                <img
-                                                  src="./product-images/banner71.webp"
-                                                  alt=""
-                                                  class="img-responsive"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                          <div class="image-box">
-                                            <div class="img-banner effectOne">
-                                              <a href="/collections/all">
-                                                <img
-                                                  src="./product-images/banner72.webp"
-                                                  alt=""
-                                                  class="img-responsive"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <script type="text/javascript">
-                                $(window).on("load", function () {
-                                  jQuery(function ($) {
-                                    $(
-                                      "#proListGolMartSeven .owl-carousel"
-                                    ).each(function () {
-                                      $(this).owlCarousel({
-                                        items: 4,
-                                        lazyLoad: true,
-                                        nav: false,
-                                        addClassActive: true,
-                                        afterInit: SetOwlCarouselFirstLast,
-                                        afterAction: SetOwlCarouselFirstLast,
-                                        autoplay: 8000,
-                                        responsiveBaseElement: "body",
-                                        responsive: {
-                                          0: {
-                                            items: 1,
-                                          },
-                                          500: {
-                                            items: 2,
-                                          },
-                                          1000: {
-                                            items: 3,
-                                          },
-                                          1200: {
+                                  <script type="text/javascript">
+                                    $(window).on("load", function () {
+                                      jQuery(function ($) {
+                                        $(
+                                          "#proListGolMartFive .owl-carousel"
+                                        ).each(function () {
+                                          $(this).owlCarousel({
                                             items: 4,
-                                          },
-                                        },
-                                        navContainer:
-                                          "#categoryTabSeven1 .owl-controls",
-                                        navText: ["Prev", "Next"],
+                                            lazyLoad: true,
+                                            nav: false,
+                                            addClassActive: true,
+                                            afterInit: SetOwlCarouselFirstLast,
+                                            afterAction:
+                                              SetOwlCarouselFirstLast,
+                                            autoplay: 8000,
+                                            responsiveBaseElement: "body",
+                                            responsive: {
+                                              0: {
+                                                items: 1,
+                                              },
+                                              500: {
+                                                items: 2,
+                                              },
+                                              1000: {
+                                                items: 3,
+                                              },
+                                              1200: {
+                                                items: 4,
+                                              },
+                                            },
+                                            navContainer:
+                                              "#categoryTabFive1 .owl-controls",
+                                            navText: ["Prev", "Next"],
+                                          });
+                                        });
+                                        function SetOwlCarouselFirstLast(el) {
+                                          el.find(".owl-item").removeClass(
+                                            "first"
+                                          );
+                                          el.find(".owl-item.active")
+                                            .first()
+                                            .addClass("first");
+                                          el.find(".owl-item").removeClass(
+                                            "last"
+                                          );
+                                          el.find(".owl-item.active")
+                                            .last()
+                                            .addClass("last");
+                                        }
                                       });
                                     });
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
-                                  });
-                                });
-                              </script>
+                                  </script>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12">
-                        <div class="row-inner">
-                          <div
-                            id="proListGolMartEight"
-                            class="block categoryTabs floor-fixed-panel-play"
-                          >
-                            <div class="block-content blockGolMart Eight">
-                              <div class="row no-gutter">
-                                <div
-                                  class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmLeft">
-                                    <div class="block-title">
-                                      <h3>Beauty <br />&amp; Health</h3>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12">
+                            <div class="row-inner">
+                              <div
+                                id="proListGolMartSix"
+                                class="block categoryTabs floor-fixed-panel-play"
+                              >
+                                <div class="block-content blockGolMart Six">
+                                  <div class="row no-gutter">
+                                    <div
+                                      class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
+                                    >
+                                      <div class="pgmLeft">
+                                        <div class="block-title">
+                                          <h3>Sports <br />&amp; Outdoors</h3>
+                                        </div>
+                                        <div class="tab-nav">
+                                          <ul class="nav nav-tabs">
+                                            <li class="active">
+                                              <a
+                                                href="#categoryTabSix1"
+                                                data-toggle="tab"
+                                                >Athletic Clothing</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix2"
+                                                data-toggle="tab"
+                                                >Exercise &amp; Fitness</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix3"
+                                                data-toggle="tab"
+                                                >Hunting &amp; Fishing</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix4"
+                                                data-toggle="tab"
+                                                >Team Sports</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix5"
+                                                data-toggle="tab"
+                                                >Fan Shop</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix6"
+                                                data-toggle="tab"
+                                                >Golf</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix7"
+                                                data-toggle="tab"
+                                                >Leisure Sports</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix8"
+                                                data-toggle="tab"
+                                                >Sports Collectibles</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix9"
+                                                data-toggle="tab"
+                                                >All Sports &amp; Fitness</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix10"
+                                                data-toggle="tab"
+                                                >Camping &amp; Hiking</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSix11"
+                                                data-toggle="tab"
+                                                >Cycling</a
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="tab-nav">
-                                      <ul class="nav nav-tabs">
-                                        <li class="active">
-                                          <a
-                                            href="#categoryTabEight1"
-                                            data-toggle="tab"
-                                            >All Beauty</a
+                                    <div
+                                      class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
+                                    >
+                                      <div class="pgmRight">
+                                        <div class="tab-content">
+                                          <div
+                                            id="categoryTabSix1"
+                                            class="tab-pane box-products active"
                                           >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight2"
-                                            data-toggle="tab"
-                                            >Luxury Beauty</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight3"
-                                            data-toggle="tab"
-                                            >Men's Grooming</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight4"
-                                            data-toggle="tab"
-                                            >Health, Household</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight5"
-                                            data-toggle="tab"
-                                            >Baby Care</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight6"
-                                            data-toggle="tab"
-                                            >Specialty Diets</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight7"
-                                            data-toggle="tab"
-                                            >Wine</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight8"
-                                            data-toggle="tab"
-                                            >Subscribe &amp; Save</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="#categoryTabEight9"
-                                            data-toggle="tab"
-                                            >Prime Pantry</a
-                                          >
-                                        </li>
-                                      </ul>
+                                            <div class="product_list_owl">
+                                              <div
+                                                class="owl-carousel slide owl-theme"
+                                              >
+                                                <carousel-item
+                                                  base-title="mattis dui placerat suscipit. Nullam luctus "
+                                                  main-image="./product-images/61.webp"
+                                                  hidden-image="./product-images/61_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="lacus imperdiet sed. Vestibulum vel dapibus nibh"
+                                                  main-image="./product-images/62.webp"
+                                                  hidden-image="./product-images/62_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="efficitur at sapien vitae, faucibus porttitor leo."
+                                                  main-image="./product-images/63.webp"
+                                                  hidden-image="./product-images/63_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="consectetur convallis magna. Fusce a enim nec sapien "
+                                                  main-image="./product-images/64.webp"
+                                                  hidden-image="./product-images/64_large.webp"
+                                                ></carousel-item>
+                                              </div>
+                                              <div class="owl-controls"></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="bannerGolMart">
+                                          <div class="image-box">
+                                            <div class="img-banner effectOne">
+                                              <a href="/collections/all">
+                                                <img
+                                                  src="./product-images/banner61.webp"
+                                                  alt=""
+                                                  class="img-responsive"
+                                                />
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
+                                  <script type="text/javascript">
+                                    $(window).on("load", function () {
+                                      jQuery(function ($) {
+                                        $(
+                                          "#proListGolMartSix .owl-carousel"
+                                        ).each(function () {
+                                          $(this).owlCarousel({
+                                            items: 4,
+                                            lazyLoad: true,
+                                            nav: false,
+                                            addClassActive: true,
+                                            afterInit: SetOwlCarouselFirstLast,
+                                            afterAction:
+                                              SetOwlCarouselFirstLast,
+                                            autoplay: 8000,
+                                            responsiveBaseElement: "body",
+                                            responsive: {
+                                              0: {
+                                                items: 1,
+                                              },
+                                              500: {
+                                                items: 2,
+                                              },
+                                              1000: {
+                                                items: 3,
+                                              },
+                                              1200: {
+                                                items: 4,
+                                              },
+                                            },
+                                            navContainer:
+                                              "#categoryTabSix1 .owl-controls",
+                                            navText: ["Prev", "Next"],
+                                          });
+                                        });
+                                        function SetOwlCarouselFirstLast(el) {
+                                          el.find(".owl-item").removeClass(
+                                            "first"
+                                          );
+                                          el.find(".owl-item.active")
+                                            .first()
+                                            .addClass("first");
+                                          el.find(".owl-item").removeClass(
+                                            "last"
+                                          );
+                                          el.find(".owl-item.active")
+                                            .last()
+                                            .addClass("last");
+                                        }
+                                      });
+                                    });
+                                  </script>
                                 </div>
-                                <div
-                                  class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
-                                >
-                                  <div class="pgmRight">
-                                    <div class="tab-content">
-                                      <div
-                                        id="categoryTabEight1"
-                                        class="tab-pane box-products active"
-                                      >
-                                        <div class="product_list_owl">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12">
+                            <div class="row-inner">
+                              <div
+                                id="proListGolMartSeven"
+                                class="block categoryTabs floor-fixed-panel-play"
+                              >
+                                <div class="block-content blockGolMart Seven">
+                                  <div class="row no-gutter">
+                                    <div
+                                      class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
+                                    >
+                                      <div class="pgmLeft">
+                                        <div class="block-title">
+                                          <h3>
+                                            Gifts, Parties <br />&amp; Holiday
+                                          </h3>
+                                        </div>
+                                        <div class="tab-nav">
+                                          <ul class="nav nav-tabs">
+                                            <li class="active">
+                                              <a
+                                                href="#categoryTabSeven1"
+                                                data-toggle="tab"
+                                                >Sofas &amp; Loveseats</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven2"
+                                                data-toggle="tab"
+                                                >Coffee, Sofa</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven3"
+                                                data-toggle="tab"
+                                                >Living Room Chairs</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven4"
+                                                data-toggle="tab"
+                                                >Ottomans</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven5"
+                                                data-toggle="tab"
+                                                >Benches</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven6"
+                                                data-toggle="tab"
+                                                >Media/Bookshelves</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven7"
+                                                data-toggle="tab"
+                                                >Sectional Sofas</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven8"
+                                                data-toggle="tab"
+                                                >Recliners</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven9"
+                                                data-toggle="tab"
+                                                >Futons</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven10"
+                                                data-toggle="tab"
+                                                >Lounge Chairs</a
+                                              >
+                                            </li>
+
+                                            <li>
+                                              <a
+                                                href="#categoryTabSeven11"
+                                                data-toggle="tab"
+                                                >Living Room Sets</a
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
+                                    >
+                                      <div class="pgmRight">
+                                        <div class="tab-content">
                                           <div
-                                            class="owl-carousel slide owl-theme"
+                                            id="categoryTabSeven1"
+                                            class="tab-pane box-products active"
                                           >
-                                            <carousel-item
-                                              base-title="eu lacinia arcu interdum sed. Morbi efficitu"
-                                              main-image="./product-images/12.webp"
-                                              hidden-image="./product-images/12_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="hendrerit quam. Mauris tristique facilisis mal"
-                                              main-image="./product-images/13.webp"
-                                              hidden-image="./product-images/13_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="neque gravida efficitur. Pellentesque feugiat liber"
-                                              main-image="./product-images/14.webp"
-                                              hidden-image="./product-images/14_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Aliquam euismod vestibulum felis, sit amet tempus arc"
-                                              main-image="./product-images/15.webp"
-                                              hidden-image="./product-images/15_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="porttitor enim mollis feugiat"
-                                              main-image="./product-images/31.webp"
-                                              hidden-image="./product-images/31_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="Praesent sagittis ut nibh quis dapibus"
-                                              main-image="./product-images/32.webp"
-                                              hidden-image="./product-images/32_large.webp"
-                                            ></carousel-item>
-                                            <carousel-item
-                                              base-title="nec nibh pharetra tortor porta tincidunt"
-                                              main-image="./product-images/34.webp"
-                                              hidden-image="./product-images/34_large.webp"
-                                            ></carousel-item>
+                                            <div class="product_list_owl">
+                                              <div
+                                                class="owl-carousel slide owl-theme"
+                                              >
+                                                <carousel-item
+                                                  base-title="tempor, erat urna suscipit lorem"
+                                                  main-image="./product-images/53.webp"
+                                                  hidden-image="./product-images/53_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="tempor, erat urna suscipit lorem"
+                                                  main-image="./product-images/52.webp"
+                                                  hidden-image="./product-images/52_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="quam vel, scelerisque est. Integer ut tellus"
+                                                  main-image="./product-images/51.webp"
+                                                  hidden-image="./product-images/51_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="Pellentesque feugiat libero quis orci molestie"
+                                                  main-image="./product-images/23.webp"
+                                                  hidden-image="./product-images/23_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="Nulla facilisi. In hac habitasse platea dictumst"
+                                                  main-image="./product-images/42.webp"
+                                                  hidden-image="./product-images/42_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="Curabitur in risus a elit ornare condimentum"
+                                                  main-image="./product-images/41.webp"
+                                                  hidden-image="./product-images/41_large.webp"
+                                                ></carousel-item>
+                                                <carousel-item
+                                                  base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
+                                                  main-image="./product-images/43.webp"
+                                                  hidden-image="./product-images/43_large.webp"
+                                                ></carousel-item>
+                                              </div>
+                                              <div class="owl-controls"></div>
+                                            </div>
                                           </div>
-                                          <div class="owl-controls"></div>
+                                        </div>
+                                        <div class="bannerGolMart">
+                                          <div class="row no-gutter">
+                                            <div class="col-xs-12 col-sm-6">
+                                              <div class="image-box">
+                                                <div
+                                                  class="img-banner effectOne"
+                                                >
+                                                  <a href="/collections/all">
+                                                    <img
+                                                      src="./product-images/banner71.webp"
+                                                      alt=""
+                                                      class="img-responsive"
+                                                    />
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                              <div class="image-box">
+                                                <div
+                                                  class="img-banner effectOne"
+                                                >
+                                                  <a href="/collections/all">
+                                                    <img
+                                                      src="./product-images/banner72.webp"
+                                                      alt=""
+                                                      class="img-responsive"
+                                                    />
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="bannerGolMart">
-                                      <div class="image-box">
-                                        <div class="img-banner effectOne">
-                                          <a href="/collections/all">
-                                            <img
-                                              src="./product-images/banner81.webp"
-                                              alt=""
-                                              class="img-responsive"
-                                            />
-                                          </a>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    <script type="text/javascript">
+                                      $(window).on("load", function () {
+                                        jQuery(function ($) {
+                                          $(
+                                            "#proListGolMartSeven .owl-carousel"
+                                          ).each(function () {
+                                            $(this).owlCarousel({
+                                              items: 4,
+                                              lazyLoad: true,
+                                              nav: false,
+                                              addClassActive: true,
+                                              afterInit:
+                                                SetOwlCarouselFirstLast,
+                                              afterAction:
+                                                SetOwlCarouselFirstLast,
+                                              autoplay: 8000,
+                                              responsiveBaseElement: "body",
+                                              responsive: {
+                                                0: {
+                                                  items: 1,
+                                                },
+                                                500: {
+                                                  items: 2,
+                                                },
+                                                1000: {
+                                                  items: 3,
+                                                },
+                                                1200: {
+                                                  items: 4,
+                                                },
+                                              },
+                                              navContainer:
+                                                "#categoryTabSeven1 .owl-controls",
+                                              navText: ["Prev", "Next"],
+                                            });
+                                          });
+                                          function SetOwlCarouselFirstLast(el) {
+                                            el.find(".owl-item").removeClass(
+                                              "first"
+                                            );
+                                            el.find(".owl-item.active")
+                                              .first()
+                                              .addClass("first");
+                                            el.find(".owl-item").removeClass(
+                                              "last"
+                                            );
+                                            el.find(".owl-item.active")
+                                              .last()
+                                              .addClass("last");
+                                          }
+                                        });
+                                      });
+                                    </script>
                                   </div>
                                 </div>
                               </div>
-                              <script type="text/javascript">
-                                $(window).on("load", function () {
-                                  jQuery(function ($) {
-                                    $(
-                                      "#proListGolMartEight .owl-carousel"
-                                    ).each(function () {
-                                      $(this).owlCarousel({
-                                        items: 4,
-                                        lazyLoad: true,
-                                        nav: false,
-                                        addClassActive: true,
-                                        afterInit: SetOwlCarouselFirstLast,
-                                        afterAction: SetOwlCarouselFirstLast,
-                                        autoplay: 8000,
-                                        responsiveBaseElement: "body",
-                                        responsive: {
-                                          0: {
-                                            items: 1,
-                                          },
-                                          500: {
-                                            items: 2,
-                                          },
-                                          1000: {
-                                            items: 3,
-                                          },
-                                          1200: {
-                                            items: 4,
-                                          },
-                                        },
-                                        navContainer:
-                                          "#categoryTabEight1 .owl-controls",
-                                        navText: ["Prev", "Next"],
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                              <div class="row-inner">
+                                <div
+                                  id="proListGolMartEight"
+                                  class="block categoryTabs floor-fixed-panel-play"
+                                >
+                                  <div class="block-content blockGolMart Eight">
+                                    <div class="row no-gutter">
+                                      <div
+                                        class="col-lg-2 col-md-3 col-sm-12 col-xs-12"
+                                      >
+                                        <div class="pgmLeft">
+                                          <div class="block-title">
+                                            <h3>Beauty <br />&amp; Health</h3>
+                                          </div>
+                                          <div class="tab-nav">
+                                            <ul class="nav nav-tabs">
+                                              <li class="active">
+                                                <a
+                                                  href="#categoryTabEight1"
+                                                  data-toggle="tab"
+                                                  >All Beauty</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight2"
+                                                  data-toggle="tab"
+                                                  >Luxury Beauty</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight3"
+                                                  data-toggle="tab"
+                                                  >Men's Grooming</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight4"
+                                                  data-toggle="tab"
+                                                  >Health, Household</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight5"
+                                                  data-toggle="tab"
+                                                  >Baby Care</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight6"
+                                                  data-toggle="tab"
+                                                  >Specialty Diets</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight7"
+                                                  data-toggle="tab"
+                                                  >Wine</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight8"
+                                                  data-toggle="tab"
+                                                  >Subscribe &amp; Save</a
+                                                >
+                                              </li>
+
+                                              <li>
+                                                <a
+                                                  href="#categoryTabEight9"
+                                                  data-toggle="tab"
+                                                  >Prime Pantry</a
+                                                >
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="col-lg-10 col-md-9 col-sm-12 col-xs-12"
+                                      >
+                                        <div class="pgmRight">
+                                          <div class="tab-content">
+                                            <div
+                                              id="categoryTabEight1"
+                                              class="tab-pane box-products active"
+                                            >
+                                              <div class="product_list_owl">
+                                                <div
+                                                  class="owl-carousel slide owl-theme"
+                                                >
+                                                  <carousel-item
+                                                    base-title="eu lacinia arcu interdum sed. Morbi efficitu"
+                                                    main-image="./product-images/12.webp"
+                                                    hidden-image="./product-images/12_large.webp"
+                                                  ></carousel-item>
+                                                  <carousel-item
+                                                    base-title="hendrerit quam. Mauris tristique facilisis mal"
+                                                    main-image="./product-images/13.webp"
+                                                    hidden-image="./product-images/13_large.webp"
+                                                  ></carousel-item>
+                                                  <carousel-item
+                                                    base-title="neque gravida efficitur. Pellentesque feugiat liber"
+                                                    main-image="./product-images/14.webp"
+                                                    hidden-image="./product-images/14_large.webp"
+                                                  ></carousel-item>
+                                                  <carousel-item
+                                                    base-title="Aliquam euismod vestibulum felis, sit amet tempus arc"
+                                                    main-image="./product-images/15.webp"
+                                                    hidden-image="./product-images/15_large.webp"
+                                                  ></carousel-item>
+                                                  <carousel-item
+                                                    base-title="porttitor enim mollis feugiat"
+                                                    main-image="./product-images/31.webp"
+                                                    hidden-image="./product-images/31_large.webp"
+                                                  ></carousel-item>
+                                                  <carousel-item
+                                                    base-title="Praesent sagittis ut nibh quis dapibus"
+                                                    main-image="./product-images/32.webp"
+                                                    hidden-image="./product-images/32_large.webp"
+                                                  ></carousel-item>
+                                                  <carousel-item
+                                                    base-title="nec nibh pharetra tortor porta tincidunt"
+                                                    main-image="./product-images/34.webp"
+                                                    hidden-image="./product-images/34_large.webp"
+                                                  ></carousel-item>
+                                                </div>
+                                                <div class="owl-controls"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="bannerGolMart">
+                                            <div class="image-box">
+                                              <div class="img-banner effectOne">
+                                                <a href="/collections/all">
+                                                  <img
+                                                    src="./product-images/banner81.webp"
+                                                    alt=""
+                                                    class="img-responsive"
+                                                  />
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                      $(window).on("load", function () {
+                                        jQuery(function ($) {
+                                          $(
+                                            "#proListGolMartEight .owl-carousel"
+                                          ).each(function () {
+                                            $(this).owlCarousel({
+                                              items: 4,
+                                              lazyLoad: true,
+                                              nav: false,
+                                              addClassActive: true,
+                                              afterInit:
+                                                SetOwlCarouselFirstLast,
+                                              afterAction:
+                                                SetOwlCarouselFirstLast,
+                                              autoplay: 8000,
+                                              responsiveBaseElement: "body",
+                                              responsive: {
+                                                0: {
+                                                  items: 1,
+                                                },
+                                                500: {
+                                                  items: 2,
+                                                },
+                                                1000: {
+                                                  items: 3,
+                                                },
+                                                1200: {
+                                                  items: 4,
+                                                },
+                                              },
+                                              navContainer:
+                                                "#categoryTabEight1 .owl-controls",
+                                              navText: ["Prev", "Next"],
+                                            });
+                                          });
+                                          function SetOwlCarouselFirstLast(el) {
+                                            el.find(".owl-item").removeClass(
+                                              "first"
+                                            );
+                                            el.find(".owl-item.active")
+                                              .first()
+                                              .addClass("first");
+                                            el.find(".owl-item").removeClass(
+                                              "last"
+                                            );
+                                            el.find(".owl-item.active")
+                                              .last()
+                                              .addClass("last");
+                                          }
+                                        });
                                       });
-                                    });
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
-                                  });
-                                });
-                              </script>
+                                    </script>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -4283,7 +4321,86 @@
         type="text/javascript"
       ></script>
     </div>
-
+    <div class="j-floor-fixed-panel-sidebar">
+      <div
+        id="j-floor-fixed-panel"
+        class="floor-fixed-panel hidden-xs hidden-sm"
+      >
+        <ul class="nav floor-nav-list">
+          <li class="nav-One">
+            <a
+              class="floor-skin-One"
+              href="#proListGolMartOne"
+              title="Fashion &amp; Clothing"
+              ><i class="iconOne"></i><span>Fashion &amp; Clothing</span></a
+            >
+          </li>
+          <li class="nav-Two">
+            <a
+              class="floor-skin-Two"
+              href="#proListGolMartTwo"
+              title="Electronics &amp; Computers"
+              ><i class="iconTwo"></i
+              ><span>Electronics &amp; Computers</span></a
+            >
+          </li>
+          <li class="nav-Three">
+            <a
+              class="floor-skin-Three"
+              href="#proListGolMartThree"
+              title="Toy, Kids &amp; Baby"
+              style=""
+              ><i class="iconThree"></i><span>Toy, Kids &amp; Baby</span></a
+            >
+          </li>
+          <li class="nav-Four">
+            <a
+              class="floor-skin-Four"
+              href="#proListGolMartFour"
+              title="Home, Garden &amp; Tools"
+              style=""
+              ><i class="iconFour" style=""></i
+              ><span style="">Home, Garden &amp; Tools</span></a
+            >
+          </li>
+          <li class="nav-Five">
+            <a
+              class="floor-skin-Five"
+              href="#proListGolMartFive"
+              title="Decor &amp; Furniture"
+              style=""
+              ><i class="iconFive"></i><span>Decor &amp; Furniture</span></a
+            >
+          </li>
+          <li class="nav-Six">
+            <a
+              class="floor-skin-Six"
+              href="#proListGolMartSix"
+              title="Sports &amp; Outdoors"
+              ><i class="iconSix"></i><span>Sports &amp; Outdoors</span></a
+            >
+          </li>
+          <li class="nav-Seven">
+            <a
+              class="floor-skin-Seven"
+              href="#proListGolMartSeven"
+              title="Gifts, Parties &amp; Holiday"
+              ><i class="iconSeven"></i
+              ><span>Gifts, Parties &amp; Holiday</span></a
+            >
+          </li>
+          <li class="nav-Eight">
+            <a
+              class="floor-skin-Eight"
+              href="#proListGolMartEight"
+              title="Beauty &amp; Health"
+              ><i class="iconEight"></i><span>Beauty &amp; Health</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/fixed-panel.js" type="text/javascript"></script>
     <!-- <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script> -->
   </body>
 </html>

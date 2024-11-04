@@ -65,9 +65,9 @@ function addStyleToList(displayType) {
 
 function displayProductWithAnimation() {
   listProductBlock = Array.from(listProductBlock);
-  let shown = listProductBlock.filter((e) => {
+  let shown = listProductBlock.filter((list) => {
     return (
-      e.offsetTop < innerHeight + scrollY && !e.classList.contains("animated")
+      list.offsetTop < innerHeight + scrollY && !list.classList.contains("animated")
     );
   });
   if (isListDisplayed) {
