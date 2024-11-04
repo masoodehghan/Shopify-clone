@@ -16,9 +16,11 @@
 
 #alpha-nav .navbar-nav > li > a::after {
   content: "";
-  bottom: 0;
+  bottom: -23px;
   left: 0;
   right: 0;
+  display: block;
+  border-top: 0;
   margin: 0 auto;
   line-height: 0;
   position: absolute;
@@ -33,11 +35,15 @@
   transition: border 0.3s ease-out 0s;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
 #alpha-nav .navbar-nav > li .caret::before {
   content: "\f107";
   font-family: FontAwesome;
   position: absolute;
-  top: -1px;
+  top: -23px;
   right: 18px;
 }
 #alpha-nav .navbar-nav > li.dropdown:hover > a::after {
@@ -294,10 +300,31 @@ form#searchbox {
 }
 
 #alpha-menu .megamenu > li > a {
-  line-height: 64px;
-  border: 1px 1px;
+  position: relative;
   padding: 0 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 64px;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
 }
+
+#alpha-menu .navbar-nav > li {
+  margin: 0;
+}
+#alpha-menu .navbar-nav > li .caret {
+  width: 10px;
+  border: 0px;
+}
+
+#alpha-menu .dropdown-menu li a .caret::before {
+  content: "\f105";
+  top: 7px;
+}
+
 #alpha-menu .megamenu > li {
   border-right: 1px solid rgba(0, 0, 0, 0.17);
 }
@@ -727,8 +754,8 @@ nav .popup-title {
 }
 
 #alpha-menu .btn-menu-canvas:hover {
-	background-color: #fff;
-	color: #222;
-	-webkit-transition: all .35s ease 0s;
-	transition: all .35s ease 0s;
+  background-color: #fff;
+  color: #222;
+  -webkit-transition: all 0.35s ease 0s;
+  transition: all 0.35s ease 0s;
 }

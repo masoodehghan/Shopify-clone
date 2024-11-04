@@ -54,7 +54,7 @@
 }
 
 body {
-  line-height: 1.075;
+  line-height: 1.475;
   font-size: 12px;
   font-family: Poppins, sans-serif, serif;
   background-color: var(--main-bg-color);
@@ -74,6 +74,26 @@ ol {
 
 .col-xs-6 {
   width: 50%;
+}
+
+#alpha-top-menu {
+  text-align: center;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
 }
 
 .no-gutter > [class*="col-"] {

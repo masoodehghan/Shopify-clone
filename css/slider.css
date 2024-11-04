@@ -212,3 +212,87 @@
 .nivo-controlNav {
   display: none;
 }
+
+.nivo-directionNav a.nivo-prevNav::before {
+  content: "\f104";
+  font-family: FontAwesome;
+  font-size: 20px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  height: 60px;
+  width: 26px;
+  line-height: 58px;
+  text-align: left;
+  color: #fff;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.nivo-directionNav a.nivo-prevNav:hover {
+  border-left-color: #f44336;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nivo-directionNav a.nivo-prevNav {
+  left: -30px;
+  right: auto;
+  border-left: 30px solid #000000;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.slider-container:hover .nivo-directionNav a.nivo-prevNav {
+  left: 0;
+}
+.nivo-directionNav a.nivo-prevNav:hover::before {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nivo-directionNav a {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0;
+  display: block;
+  cursor: pointer;
+  font-size: 0px;
+  z-index: 10;
+}
+.nivo-directionNav a.nivo-nextNav::before {
+  content: "\f105";
+  font-family: FontAwesome;
+  font-size: 20px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  height: 60px;
+  width: 26px;
+  line-height: 58px;
+  text-align: right;
+  color: #fff;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.slider-container:hover .nivo-directionNav a.nivo-nextNav {
+	right: 0;
+}
+.nivo-directionNav a.nivo-nextNav {
+	right: -30px;
+	left: auto;
+	border-right: 30px solid #000000;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease;
+}
+.nivo-directionNav a.nivo-nextNav:hover::before {
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease;
+}
+.nivo-directionNav a.nivo-nextNav:hover {
+	border-right-color: #f44336;
+	-webkit-transition: all .35s ease;
+	transition: all .35s ease;
+}

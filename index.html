@@ -2103,8 +2103,7 @@
                                           lazyLoad: true,
                                           nav: false,
                                           addClassActive: true,
-                                          afterInit: SetOwlCarouselFirstLast,
-                                          afterAction: SetOwlCarouselFirstLast,
+                                          loop: true, 
                                           autoplay: true,
                                           autoplayTimeout: 8000,
 
@@ -2123,7 +2122,7 @@
                                             },
                                           },
                                           navContainer:
-                                            "#categoryTabOne1 .owl-controls",
+                                            "#proListGolMartOne .owl-controls",
                                           navText: ["Prev", "Next"],
                                         });
                                       }
@@ -2261,7 +2260,7 @@
                                   <div class="pgmRight">
                                     <div class="tab-content">
                                       <div
-                                        id="categoryTabOne1"
+                                        id="categoryTabTwo1"
                                         class="tab-pane box-products active"
                                       >
                                         <div class="product_list_owl">
@@ -2329,8 +2328,9 @@
                                           lazyLoad: true,
                                           nav: false,
                                           addClassActive: true,
-                                          afterInit: SetOwlCarouselFirstLast,
-                                          afterAction: SetOwlCarouselFirstLast,
+                                          loop: true,
+                                          // afterInit: SetOwlCarouselFirstLast,
+                                          // afterAction: SetOwlCarouselFirstLast,
                                           autoplay: 8000,
 
                                           responsive: {
@@ -2348,21 +2348,21 @@
                                             },
                                           },
                                           navContainer:
-                                            "#categoryTabOne1 .owl-controls",
+                                            "#proListGolMartTwo .owl-controls",
                                           navText: ["Prev", "Next"],
                                         });
                                       }
                                     );
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
+                                    // function SetOwlCarouselFirstLast(el) {
+                                    //   el.find(".owl-item").removeClass("first");
+                                    //   el.find(".owl-item.active")
+                                    //     .first()
+                                    //     .addClass("first");
+                                    //   el.find(".owl-item").removeClass("last");
+                                    //   el.find(".owl-item.active")
+                                    //     .last()
+                                    //     .addClass("last");
+                                    // }
                                   });
                                 });
                               </script>
@@ -2563,8 +2563,7 @@
                                           lazyLoad: true,
                                           nav: false,
                                           addClassActive: true,
-                                          afterInit: SetOwlCarouselFirstLast,
-                                          afterAction: SetOwlCarouselFirstLast,
+                                          loop: true,
                                           autoplay: 8000,
                                           responsiveBaseElement: "body",
                                           responsive: {
@@ -2582,7 +2581,7 @@
                                             },
                                           },
                                           navContainer:
-                                            "#categoryTabThree1 .owl-controls",
+                                            "#proListGolMartThree .owl-controls",
                                           navText: ["Prev", "Next"],
                                         });
                                       });
@@ -2785,8 +2784,7 @@
                                           lazyLoad: true,
                                           nav: false,
                                           addClassActive: true,
-                                          afterInit: SetOwlCarouselFirstLast,
-                                          afterAction: SetOwlCarouselFirstLast,
+                                          loop: true,
                                           autoplay: 8000,
                                           responsiveBaseElement: "body",
                                           responsive: {
@@ -2804,24 +2802,11 @@
                                             },
                                           },
                                           navContainer:
-                                            "#categoryTabFour1 .owl-controls",
+                                            "#proListGolMartFour .owl-controls",
                                           navText: ["Prev", "Next"],
                                         });
                                       });
-                                      function SetOwlCarouselFirstLast(el) {
-                                        el.find(".owl-item").removeClass(
-                                          "first"
-                                        );
-                                        el.find(".owl-item.active")
-                                          .first()
-                                          .addClass("first");
-                                        el.find(".owl-item").removeClass(
-                                          "last"
-                                        );
-                                        el.find(".owl-item.active")
-                                          .last()
-                                          .addClass("last");
-                                      }
+                                      
                                     });
                                   });
                                 </script>
@@ -3035,9 +3020,7 @@
                                             lazyLoad: true,
                                             nav: false,
                                             addClassActive: true,
-                                            afterInit: SetOwlCarouselFirstLast,
-                                            afterAction:
-                                              SetOwlCarouselFirstLast,
+                                            loop: true,
                                             autoplay: 8000,
                                             responsiveBaseElement: "body",
                                             responsive: {
@@ -3059,20 +3042,7 @@
                                             navText: ["Prev", "Next"],
                                           });
                                         });
-                                        function SetOwlCarouselFirstLast(el) {
-                                          el.find(".owl-item").removeClass(
-                                            "first"
-                                          );
-                                          el.find(".owl-item.active")
-                                            .first()
-                                            .addClass("first");
-                                          el.find(".owl-item").removeClass(
-                                            "last"
-                                          );
-                                          el.find(".owl-item.active")
-                                            .last()
-                                            .addClass("last");
-                                        }
+                                        
                                       });
                                     });
                                   </script>
@@ -3255,9 +3225,7 @@
                                             lazyLoad: true,
                                             nav: false,
                                             addClassActive: true,
-                                            afterInit: SetOwlCarouselFirstLast,
-                                            afterAction:
-                                              SetOwlCarouselFirstLast,
+                                            loop: true,
                                             autoplay: 8000,
                                             responsiveBaseElement: "body",
                                             responsive: {
@@ -3275,24 +3243,11 @@
                                               },
                                             },
                                             navContainer:
-                                              "#categoryTabSix1 .owl-controls",
+                                              "#proListGolMartSix .owl-controls",
                                             navText: ["Prev", "Next"],
                                           });
                                         });
-                                        function SetOwlCarouselFirstLast(el) {
-                                          el.find(".owl-item").removeClass(
-                                            "first"
-                                          );
-                                          el.find(".owl-item.active")
-                                            .first()
-                                            .addClass("first");
-                                          el.find(".owl-item").removeClass(
-                                            "last"
-                                          );
-                                          el.find(".owl-item.active")
-                                            .last()
-                                            .addClass("last");
-                                        }
+                                        
                                       });
                                     });
                                   </script>
@@ -3533,7 +3488,7 @@
                                                 },
                                               },
                                               navContainer:
-                                                "#categoryTabSeven1 .owl-controls",
+                                                "#proListGolMartSeven .owl-controls",
                                               navText: ["Prev", "Next"],
                                             });
                                           });
@@ -3730,12 +3685,9 @@
                                             $(this).owlCarousel({
                                               items: 4,
                                               lazyLoad: true,
-                                              nav: false,
+                                              nav: true,
                                               addClassActive: true,
-                                              afterInit:
-                                                SetOwlCarouselFirstLast,
-                                              afterAction:
-                                                SetOwlCarouselFirstLast,
+                                              loop: true,
                                               autoplay: 8000,
                                               responsiveBaseElement: "body",
                                               responsive: {
@@ -3753,24 +3705,12 @@
                                                 },
                                               },
                                               navContainer:
-                                                "#categoryTabEight1 .owl-controls",
+                                                "#proListGolMartEight .owl-controls",
                                               navText: ["Prev", "Next"],
                                             });
                                           });
-                                          function SetOwlCarouselFirstLast(el) {
-                                            el.find(".owl-item").removeClass(
-                                              "first"
-                                            );
-                                            el.find(".owl-item.active")
-                                              .first()
-                                              .addClass("first");
-                                            el.find(".owl-item").removeClass(
-                                              "last"
-                                            );
-                                            el.find(".owl-item.active")
-                                              .last()
-                                              .addClass("last");
-                                          }
+                                        
+                                            
                                         });
                                       });
                                     </script>

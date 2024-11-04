@@ -151,4 +151,35 @@
   border-left-color: var(--color-eight);
 }
 
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-One.active{
+  background-color: var(--color-one);
+}
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Two.active{
+  background-color: var(--color-two);
+}
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Three.active{
+  background-color: var(--color-three);
+}
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Four.active{
+  background-color: var(--color-four);
+}
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Five.active{
+  background-color: var(--color-five);
+}
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Six.active{
+  background-color: var(--color-six);
+}
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Seven.active{
+  background-color: var(--color-seven);
+}
 
+#j-floor-fixed-panel .floor-nav-list a.floor-skin-Eight.active {
+  background-color: var(--color-eight);
+}
+
+#j-floor-fixed-panel .floor-nav-list a:hover span {
+	left: 100%;
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
