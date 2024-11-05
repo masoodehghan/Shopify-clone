@@ -759,3 +759,13 @@ nav .popup-title {
   -webkit-transition: all 0.35s ease 0s;
   transition: all 0.35s ease 0s;
 }
+
+.menu-icon {
+	position: relative;
+	display: block;
+	padding-left: 35px;
+}
+
+.menu-icon-1 {
+	background: url(/cdn/shop/t/3/assets/vertical_icon_1.png?v=63683523589693587411445245167) no-repeat left 4px;
+}
