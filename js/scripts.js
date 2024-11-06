@@ -194,18 +194,18 @@ customElements.define("carousel-item", CarouselItem);
 const alphaVerticalMenu = $.querySelector("#alpha-vertical-menu");
 const verticalMenuDropDownBlcok = $.querySelector(".block_content");
 
-alphaVerticalMenu.addEventListener("mouseover", (e) => {
-  if (innerWidth > 993) {
-    verticalMenuDropDownBlcok.style.display = "block";
-  }
-});
+// alphaVerticalMenu.addEventListener("mouseover", (e) => {
+//   if (innerWidth > 993) {
+//     verticalMenuDropDownBlcok.style.display = "block";
+//   }
+// });
 
-alphaVerticalMenu.addEventListener("mouseout", (e) => {
-  if (innerWidth > 993) {
+// alphaVerticalMenu.addEventListener("mouseout", (e) => {
+//   if (innerWidth > 993) {
 
-    verticalMenuDropDownBlcok.style.display = "none";
-  }
-});
+//     verticalMenuDropDownBlcok.style.display = "none";
+//   }
+// });
 
 const userInfoDropDownMenu = $.querySelector(".header_user_info .links");
 const userInfoDrop = $.querySelector(".header_user_info .popup-title");

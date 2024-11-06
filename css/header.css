@@ -16,7 +16,7 @@
 
 #alpha-nav .navbar-nav > li > a::after {
   content: "";
-  bottom: -23px;
+  bottom: -26px;
   left: 0;
   right: 0;
   display: block;
@@ -39,7 +39,7 @@
   display: none;
 }
 
-#alpha-nav .navbar-nav > li .caret::before {
+#alpha-nav #alpha-menu .navbar-nav > li .caret::before {
   content: "\f107";
   font-family: FontAwesome;
   position: absolute;
@@ -260,20 +260,12 @@ form#searchbox {
 /* alpha nav start */
 
 #alpha-vertical-menu {
-  padding: 12px 30px 10px 30px;
+  margin: 10px 0;
   background-color: #222222;
   color: #fff;
   text-transform: uppercase;
   position: relative;
   font-family: "Rhodium Libre";
-}
-
-.title-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 292.5;
-  max-height: 22px;
 }
 
 .alpha-vertical-menu {
@@ -299,6 +291,10 @@ form#searchbox {
   border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 
+#alpha-menu .container {
+  position: static;
+}
+
 #alpha-menu .megamenu > li > a {
   position: relative;
   padding: 0 18px;
@@ -320,7 +316,7 @@ form#searchbox {
   border: 0px;
 }
 
-#alpha-menu .dropdown-menu li a .caret::before {
+#alpha-menu  .dropdown-menu li a .caret::before {
   content: "\f105";
   top: 7px;
 }
@@ -395,8 +391,7 @@ form#searchbox {
 .megamenu .sub-apmegamenu-2,
 .megamenu .sub-apmegamenu-3,
 .megamenu .sub-apmegamenu-1 {
-  width: 1170px !important;
-  left: 10px;
+  width: 100em !important;
 }
 
 .no-gutter {
@@ -759,13 +754,104 @@ nav .popup-title {
   -webkit-transition: all 0.35s ease 0s;
   transition: all 0.35s ease 0s;
 }
+#headerOne #alpha-vertical-menu .title-block {
+  cursor: pointer;
+  padding: 12px 30px 10px;
+  width: 100%;
+}
+#alpha-vertical-menu .title-block::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
 
 .menu-icon {
-	position: relative;
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  line-height: 30px;
+}
+
+
+#alpha-vertical-menu  .navbar-nav > li > a {
+  position: relative;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-transform: none;
+  color: #666;
+  line-height: 30px;
+  background: transparent;
+  font-weight: 400;
+  line-height: 30px;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+#alpha-nav #alpha-vertical-menu .navbar-nav > li.dropdown:hover > a::after {
+  display: none;
+}
+#alpha-nav #alpha-vertical-menu .block_content .dropdown-toggle::after {
+  display: none;
+}
+
+#alpha-nav  .block_content .caret::before {
+  font-size: 14px;
+  position: absolute;
+  right: 30px;
+}
+
+
+#alpha-nav  .verticalmenu .navbar-nav > li .caret {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  border-right: 5px solid #999999;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out; 
+}
+
+#headerOne .verticalmenu .navbar-nav > li .caret {
+	border: 0px;
+	right: 30px;
+}
+
+#headerOne .verticalmenu .navbar-nav > li .caret::before {
+	content: "\f107";
+	font-family: FontAwesome;
+	font-size: 14px;
 	display: block;
-	padding-left: 35px;
+  top: -10px;
+  right: -2px;
 }
 
 .menu-icon-1 {
-	background: url(/cdn/shop/t/3/assets/vertical_icon_1.png?v=63683523589693587411445245167) no-repeat left 4px;
+	background: url("../images/vertical_icon_1.webp") no-repeat left 4px;
+}
+
+.menu-icon-2 {
+	background: url("../images/vertical_icon_2.webp") no-repeat left 4px;
+}
+
+.menu-icon-3 {
+	background: url("../images/vertical_icon_3.webp") no-repeat left 4px;
+}
+
+.menu-icon-4 {
+	background: url("../images/vertical_icon_4.webp") no-repeat left 4px;
+}
+.menu-icon-5 {
+	background: url("../images/vertical_icon_5.webp") no-repeat left 4px;
+}
+.menu-icon-6 {
+	background: url("../images/vertical_icon_6.webp") no-repeat left 4px;
+}
+.menu-icon-7 {
+	background: url("../images/vertical_icon_7.webp") no-repeat left 4px;
+}
+.menu-icon-8 {
+	background: url("../images/vertical_icon_8.webp") no-repeat left 4px;
 }
