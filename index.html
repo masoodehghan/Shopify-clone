@@ -813,7 +813,7 @@
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-12 col-md-9">
-                    <div class="container" style="position: static;">
+                    <div class="container" style="position: static">
                       <div id="alpha-menu">
                         <!-- responsive -->
                         <div class="navbar-header">
@@ -4104,6 +4104,76 @@
           </div>
         </footer>
       </section>
+      <div id="paneltool">
+        <div class="paneltool">
+          <div class="panelbutton">
+            <img src="./images/params.svg" alt="" />
+          </div>
+          <div class="panelcontent">
+            <div class="panelinner">
+              <span>Panel Tool</span>
+              <div class="group-input clearfix">
+                <label class="control-label"
+                  ><img src="./images/pin.svg" alt="pin.svg" /> Float
+                  style</label
+                >
+                <div class="paneltool-update">
+                  <span class="control-span">Float header</span>
+                  <div class="float-control">
+                    <div class="onoffswitch">
+                      <input
+                        type="checkbox"
+                        name="onoffswitch"
+                        class="onoffswitch-checkbox"
+                        id="floatHeader"
+                      />
+                      <label class="onoffswitch-label" for="floatHeader">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="paneltool-update">
+                  <span class="control-span">Float topbar</span>
+                  <div class="float-control">
+                    <div class="onoffswitch">
+                      <input
+                        type="checkbox"
+                        name="onoffswitch"
+                        class="onoffswitch-checkbox"
+                        id="floatTopbar"
+                      />
+                      <label class="onoffswitch-label" for="floatTopbar">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-input clearfix">
+                <label class="control-label"
+                  ><i class="fa fa-desktop"></i> Layout mode</label
+                >
+                <div class="layout-control clearfix">
+                  <span
+                    class="dynamic-update-layout paneltool-update selected"
+                    data-layout-mode="layout-default"
+                    >Default</span
+                  >
+                  <span
+                    class="dynamic-update-layout paneltool-update"
+                    data-layout-mode="layout-boxed-lg"
+                    >Boxed Large</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <script src="./js/scripts.js" type="text/javascript"></script>
       <script src="./js/touch.js"></script>
       <script src="./js/jquery.nivo.slider.js" type="text/javascript"></script>

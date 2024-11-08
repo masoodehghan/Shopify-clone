@@ -1,4 +1,3 @@
-const $ = document;
 
 const currencyBlock = $.querySelector("#currency_block");
 const dropdownCurrency = currencyBlock.lastElementChild;

@@ -171,19 +171,18 @@ class CarouselItem extends HTMLElement {
   connectedCallback() {
     let baseTitle = this.getAttribute("base-title");
     let name = this.shadowRoot.querySelector("h5 a");
-    let images = this.shadowRoot.querySelector('.product_img_link').children;
+    let images = this.shadowRoot.querySelector(".product_img_link").children;
     images[0].src = this.getAttribute("main-image");
     images[0].alt = baseTitle;
     images[1].children[0].src = this.getAttribute("hidden-image");
     images[1].children[0].alt = baseTitle;
-    
-    name.innerHTML = baseTitle
+
+    name.innerHTML = baseTitle;
   }
   static observedAttribiutes() {
     return ["base-title", "main-image", "hidden-image"];
   }
 }
-
 
 const $ = document;
 
@@ -191,21 +190,12 @@ window.addEventListener("load", addUserInfoDrop);
 
 customElements.define("carousel-item", CarouselItem);
 
-const alphaVerticalMenu = $.querySelector("#alpha-vertical-menu");
-const verticalMenuDropDownBlcok = $.querySelector(".block_content");
+const paneltoolBtn = $.querySelector(".panelbutton");
+const paneltool = $.getElementById("paneltool");
 
-// alphaVerticalMenu.addEventListener("mouseover", (e) => {
-//   if (innerWidth > 993) {
-//     verticalMenuDropDownBlcok.style.display = "block";
-//   }
-// });
-
-// alphaVerticalMenu.addEventListener("mouseout", (e) => {
-//   if (innerWidth > 993) {
-
-//     verticalMenuDropDownBlcok.style.display = "none";
-//   }
-// });
+paneltoolBtn.addEventListener("click", () => {
+  paneltool.firstElementChild.classList.toggle("active");
+});
 
 const userInfoDropDownMenu = $.querySelector(".header_user_info .links");
 const userInfoDrop = $.querySelector(".header_user_info .popup-title");
@@ -222,3 +212,28 @@ function addUserInfoDrop() {
     userInfoDrop.style.display = "none";
   }
 }
+const layoutControl = $.querySelector(".layout-control");
+
+for (let control of layoutControl.childNodes) {
+  control.addEventListener('click', (e) => {
+        e.preventDefault();
+      
+        e.target.classList.add('selected');
+        let siblingElem = e.target.nextElementSibling || e.target.previousElementSibling;
+        siblingElem.classList.remove('selected');
+        
+        $.body.classList.toggle('layout-boxed-lg');
+  })
+}
+
+const onOffSwitch = $.querySelectorAll('.onoffswitch');
+
+for(let switches of onOffSwitch) {
+  switches.addEventListener('click', (e) => {
+    
+    e.stopPropagation();
+    console.log(e.target.checked);
+    e.target.checked = !Boolean(e.target.checked);
+  })
+}
+
