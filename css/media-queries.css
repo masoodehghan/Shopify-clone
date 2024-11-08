@@ -146,6 +146,9 @@
     opacity: 1;
     filter: alpha(opacity=100);
   }
+  .paneltool {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
