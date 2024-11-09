@@ -1650,41 +1650,49 @@
                                   base-title="Acer X1240 DLP 3D Projector (Black)"
                                   main-image="./product-images/11.webp"
                                   hidden-image="./product-images/11_large.webp"
+                                  wow-delay="true"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="eu lacinia arcu interdum sed. Morbi efficitu"
                                   main-image="./product-images/12.webp"
                                   hidden-image="./product-images/12_large.webp"
+                                  wow-delay="100ms"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="hendrerit quam. Mauris tristique facilisis mal"
                                   main-image="./product-images/13.webp"
                                   hidden-image="./product-images/13_large.webp"
+                                  wow-delay="200ms"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="Mauris sed sollicitudin metus. Nun"
                                   main-image="./product-images/33.webp"
                                   hidden-image="./product-images/33_large.webp"
+                                  wow-delay="300ms"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="nec nibh pharetra tortor porta tincidunt"
                                   main-image="./product-images/34.webp"
                                   hidden-image="./product-images/34_large.webp"
+                                  wow-delay="400ms"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="Nulla facilisi. In hac habitasse platea dictumst"
                                   main-image="./product-images/42.webp"
                                   hidden-image="./product-images/42_large.webp"
+                                  wow-delay="500ms"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="ravida vitae tortor sit amet mollis. Suspendisse potenti"
                                   main-image="./product-images/43.webp"
                                   hidden-image="./product-images/43_large.webp"
+                                  wow-delay="600ms"
                                 ></carousel-item>
                                 <carousel-item
                                   base-title="Vivamus in augue tempus, iaculis velit eu, pulvinar dolor. "
                                   main-image="./product-images/44.webp"
                                   hidden-image="./product-images/44_large.webp"
+                                  wow-delay="800ms"
                                 ></carousel-item>
                               </div>
                               <div class="owl-controls"></div>
@@ -1699,8 +1707,7 @@
                                   $(this).owlCarousel({
                                     lazyLoad: true,
                                     addClassActive: true,
-                                    afterInit: SetOwlCarouselFirstLast,
-                                    afterAction: SetOwlCarouselFirstLast,
+                                    animateIn: "fadeIn",
                                     autoplayTimeout: 9000,
                                     autoplay: true,
                                     loop: true,
@@ -1726,17 +1733,7 @@
                                   });
                                 }
                               );
-                              function SetOwlCarouselFirstLast(el) {
-                                el.find(".owl-item").removeClass("first");
-                                el.find(".owl-item.active")
-                                  .first()
-                                  .addClass("first");
-
-                                el.find(".owl-item").removeClass("last");
-                                el.find(".owl-item.active")
-                                  .last()
-                                  .addClass("last");
-                              }
+                              
                             });
                           });
                         </script>
@@ -1934,6 +1931,7 @@
                                           items: 4,
                                           lazyLoad: true,
                                           nav: false,
+                                          animateIn: "fadeIn",
                                           addClassActive: true,
                                           loop: true,
                                           autoplay: true,
@@ -2161,8 +2159,7 @@
                                           nav: false,
                                           addClassActive: true,
                                           loop: true,
-                                          // afterInit: SetOwlCarouselFirstLast,
-                                          // afterAction: SetOwlCarouselFirstLast,
+                                          animateIn: "fadeIn",
                                           autoplay: 8000,
 
                                           responsive: {
@@ -2396,6 +2393,7 @@
                                           nav: false,
                                           addClassActive: true,
                                           loop: true,
+                                          animateIn: "fadeIn",
                                           autoplay: 8000,
                                           responsiveBaseElement: "body",
                                           responsive: {
@@ -2616,6 +2614,7 @@
                                         lazyLoad: true,
                                         nav: false,
                                         addClassActive: true,
+                                        animateIn: "fadeIn",
                                         loop: true,
                                         autoplay: 8000,
                                         responsiveBaseElement: "body",
@@ -2852,6 +2851,7 @@
                                           nav: false,
                                           addClassActive: true,
                                           loop: true,
+                                          animateIn: "fadeIn",
                                           autoplay: 8000,
                                           responsiveBaseElement: "body",
                                           responsive: {
@@ -3057,6 +3057,8 @@
                                         nav: false,
                                         addClassActive: true,
                                         loop: true,
+                                        animateIn: "fadeIn",
+
                                         autoplay: 8000,
                                         responsiveBaseElement: "body",
                                         responsive: {
@@ -3292,8 +3294,7 @@
                                         lazyLoad: true,
                                         nav: false,
                                         addClassActive: true,
-                                        afterInit: SetOwlCarouselFirstLast,
-                                        afterAction: SetOwlCarouselFirstLast,
+                                        animateIn: "fadeIn",
                                         autoplay: 8000,
                                         responsiveBaseElement: "body",
                                         responsive: {
@@ -3315,16 +3316,6 @@
                                         navText: ["Prev", "Next"],
                                       });
                                     });
-                                    function SetOwlCarouselFirstLast(el) {
-                                      el.find(".owl-item").removeClass("first");
-                                      el.find(".owl-item.active")
-                                        .first()
-                                        .addClass("first");
-                                      el.find(".owl-item").removeClass("last");
-                                      el.find(".owl-item.active")
-                                        .last()
-                                        .addClass("last");
-                                    }
                                   });
                                 });
                               </script>
@@ -3507,6 +3498,7 @@
                                         nav: true,
                                         addClassActive: true,
                                         loop: true,
+                                        animateIn: "fadeIn",
                                         autoplay: 8000,
                                         responsiveBaseElement: "body",
                                         responsive: {
@@ -4129,6 +4121,7 @@
 
       <script src="./js/scripts.js" type="text/javascript"></script>
       <script src="./js/touch.js"></script>
+      <script src="./js/panel.js"></script>
       <script src="./js/jquery.nivo.slider.js" type="text/javascript"></script>
       <script
         src="./owlcarousel/owl.carousel.js"

@@ -14,6 +14,7 @@ template.innerHTML = `
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css" />
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="./css/animation.css" type="text/css" />
     <link rel="stylesheet" href="css/body.css" type="text/css" />
     <link rel="stylesheet" href="css/header.css" type="text/css" />
     <link rel="stylesheet" href="css/columns.css" type="text/css" />
@@ -23,7 +24,7 @@ template.innerHTML = `
 <div class="item">
                                   <div
                                     class="product_block wow fadeIn animated"
-                                    data-wow-delay="400ms"
+                                    data-wow-delay="0ms"
                                   >
                                     <div
                                       class="product-container text-left product-block"
@@ -160,7 +161,7 @@ template.innerHTML = `
                                   </div>
                                 </div>
 `;
-
+let i = 0;
 class CarouselItem extends HTMLElement {
   constructor() {
     super();
@@ -170,17 +171,19 @@ class CarouselItem extends HTMLElement {
 
   connectedCallback() {
     let baseTitle = this.getAttribute("base-title");
+
     let name = this.shadowRoot.querySelector("h5 a");
     let images = this.shadowRoot.querySelector(".product_img_link").children;
+    let productBlock = this.shadowRoot.querySelector(".product_block");
     images[0].src = this.getAttribute("main-image");
     images[0].alt = baseTitle;
     images[1].children[0].src = this.getAttribute("hidden-image");
     images[1].children[0].alt = baseTitle;
-
+    productBlock.style.animationDelay = this.getAttribute("wow-delay");
     name.innerHTML = baseTitle;
   }
   static observedAttribiutes() {
-    return ["base-title", "main-image", "hidden-image"];
+    return ["base-title", "main-image", "hidden-image", "wow-delay"];
   }
 }
 
@@ -190,12 +193,6 @@ window.addEventListener("load", addUserInfoDrop);
 
 customElements.define("carousel-item", CarouselItem);
 
-const paneltoolBtn = $.querySelector(".panelbutton");
-const paneltool = $.getElementById("paneltool");
-
-paneltoolBtn.addEventListener("click", () => {
-  paneltool.firstElementChild.classList.toggle("active");
-});
 
 const userInfoDropDownMenu = $.querySelector(".header_user_info .links");
 const userInfoDrop = $.querySelector(".header_user_info .popup-title");
@@ -212,28 +209,3 @@ function addUserInfoDrop() {
     userInfoDrop.style.display = "none";
   }
 }
-const layoutControl = $.querySelector(".layout-control");
-
-for (let control of layoutControl.childNodes) {
-  control.addEventListener('click', (e) => {
-        e.preventDefault();
-      
-        e.target.classList.add('selected');
-        let siblingElem = e.target.nextElementSibling || e.target.previousElementSibling;
-        siblingElem.classList.remove('selected');
-        
-        $.body.classList.toggle('layout-boxed-lg');
-  })
-}
-
-const onOffSwitch = $.querySelectorAll('.onoffswitch');
-
-for(let switches of onOffSwitch) {
-  switches.addEventListener('click', (e) => {
-    
-    e.stopPropagation();
-    console.log(e.target.checked);
-    e.target.checked = !Boolean(e.target.checked);
-  })
-}
-

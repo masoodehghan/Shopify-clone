@@ -1,5 +1,5 @@
-import { gridTemplate } from "./grid.js";
-import { listTemplate } from "./list.js";
+import { gridTemplate } from "grid";
+import { listTemplate } from "list";
 
 document.addEventListener('load', () => {
   addStyleToList("grid");
