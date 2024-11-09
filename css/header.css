@@ -855,3 +855,11 @@ nav .popup-title {
 .menu-icon-8 {
 	background: url("../images/vertical_icon_8.webp") no-repeat left 4px;
 }
+
+#alpha-nav  #alpha-menu .navbar-nav .level1 .dropdown-menu-inner .mega-col-inner  .caret::before {
+	content: "\f107";
+	font-family: FontAwesome;
+	position: absolute;
+	top: 5px;
+	right: -10px;
+}
